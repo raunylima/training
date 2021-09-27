@@ -1,30 +1,30 @@
-<!-- Essa tag é inseriada para a exibição coreeta de um site em um navegador -->
+<!-- Tag inseriada para a exibição coreeta de um site em um navegador -->
 <!DOCTYPE html>
-<!-- A tag html é a raiz do documento HTML. Todos os elementos são descendentes deste elemento. <html> -->
+<!-- Tag html é a raiz do documento HTML. Todos os elementos a seguir são descendentes deste elemento. <html> -->
 <html lang="pt-br">
-<!-- A tag head é reponsável pelo agrupamento do metadados do site <head> -->
+<!-- Tag head é reponsável pelo agrupamento do metadados do site <head> -->
 <head>
-<!-- A tag title é a que defini o título do documento HTML. <title> -->
+    <!-- A tag title para definir o título do documento HTML. <title> -->
     <title>ISSO NÃO É UM ANIMAL</title>
 </head>
-
-<!-- A tag body é para definição do corpo do conteúdo de um site <body> -->
+<!-- Tag body é para definir do corpo do conteúdo de um site <body> -->
 <body>
-    <!-- A tag mai representa o conteúdo principal do site <main> -->
+    <!-- Tag main que representa o conteúdo principal do site <main> -->
     <main>
-        <!-- A tag nav serve para agrupamento de blocos de links do site. Ele indica que um determinado bloco é um bloco de navegação. <nav> -->
+        <!-- A tag nav para agrupamento de links do menu do site. Irá funcionar melhor no futuro com o menu em java.o. <nav> -->
         <nav>
-            <!-- A tag table é para criação de tabelas . Neste HTML usei da tabela para criar um menu para melhor apresentação, sem o uso de CSS. <table>-->
+            <!-- A tag table é para criação de tabelas. Neste HTML usei da tabela para criar um menu para melhor apresentação, sem o uso de CSS. <table>-->
             <table>
-                <!-- A tag tr é para abertura e fechamento de linhas e colunas na tabela. A cada abertura e fechamento dessa tag se refere ao número de linhas que seá incluida no HTML <tr> -->
+                <!-- A tag tr é para abertura e fechamento de linhas e colunas na tabela. A cada abertura e fechamento dessa tag se refere ao número de linhas que está sendo incluida no HTML <tr> -->
                 <tr>
-                    <!-- O atributo colspan mescla colunas <colspan> -->
+                    <!-- O atributo colspan mescla colunas e dar centralização do logo sem a necessidade estilização com CSS <colspan> -->
                     <th colspan="52">
-                        <!-- As tags h1, h2, h3, h4, h5 e h6 são tags para inserção de cabeçalhos. Normalmente utilizamos somente até h3 <h1> -->
-                        <h1>ISSO NÃO É UM ANIMAL</h1>
+                        <!-- Tag h1 com o nome da marca para dar destaque e incluir strong como semântica. Coloquei eles ocultos, pois já estou usando um logo/imagem-->
+                        <h1 hidden><strong>ISSO NÃO É UM ANIMAL</strong></h1>
+                        <a href="index.html"><img src="imagens tratadas/menor_Logo_INUC.png" alt="Logo da Isso Não É Um Animal"></a>
                 </tr>
                 <tr>
-                    <!-- A tag th e td se refere as coluna e linhas. Elas podem dar destaque/títulos nas linhas. O número de th ou td presente em uma tag tr se refere ao número de colunas criadas na tabela. <th> <td> -->
+                    <!-- A tag th e td se refere as coluna e linhas. Como já dito usei deste recurso para estilizar só com HTML. <th> <td> -->
                     <th> |||| </th>
                     <th> |||| </th>
                     <th> |||| </th>
@@ -48,7 +48,7 @@
                     <th> |||| </th>
                     <th> |||| </th>
                     <th> |||| </th>
-                    <!-- A tag a com o atributo href é utilizada para a inclusão de links e redirecionamentos no site. <a href=""> -->
+                    <!-- Tags a com o atributo href é utilizada para links para cada página criada. <a href=""> -->
                     <th><a href="index.html">Quem Somos</a></hd>
                     <th> |||| </th>
                     <th><a href="produtos.html">Nossos Produtos</a></th>
@@ -71,30 +71,29 @@
                     <th> |||| </th>
                     <th> |||| </th>
                     <th> |||| </th>
-                    <th> |||| </th>
-                    <th> |||| </th>
-                    <th> |||| </th>
-                    <th> |||| </th>
-                    <th> |||| </th>
-                    <th> |||| </th>
+                    <th> <img src="imagens tratadas/facebook_icon.png" alt="Ícone Facebook"></th>
+                    <th> <img src="imagens tratadas/instagram_icon.png" alt="Ícone Instagram"></th>
+                    <th> <img src="imagens tratadas/pinterest_icon.png" alt="Ícone Pinterest"></th>
                 </tr>
             </table>
         </nav>
-        <!-- A tag br é colocada no HTML para quebra de linhas e parágrafos. <br> -->
-        <br>
-        <br>
-        <!-- A tag header é para a inserção do conteúdo introdutório ou um conjunto de links de navegação. <header> -->
+        <!-- A tag br colocada no HTML para quebra de linhas e parágrafos. <br /> -->
+        <br />
+        <br />
+        <!-- A tag header para a inserção do conteúdo introdutório no site. No futuro irei incluir mensagens de consumidores rodando em uma banner automático com imagens de produtos ao fundo. <header> -->
         <header>
-            <!-- A tag img com o atributo src é para a inclusão de imagens no HTML. Já o atributo alt é para inserção de texto alternativo para descrever o conteúdo de uma imagem <img src> <alt> -->
+            <!-- A tag img com o atributo src com imagens dos produtos. <img src> <alt> -->
             <img src="imagens tratadas/varios_pratos_t.jpg" alt="Diversos Partos Vegans">
         </header>
-        <br>
-        <br>
-        <!-- A tag section é para a divisão de seções em um HTML <section> -->
+        <br />
+        <br />
+        <!-- A tag section é para a divisão de seções em um HTML. Usei bastante essa tag para dar uma ideia de blocos no site. <section> -->
         <section>
             <table>
                 <tr>
-                    <th colspan="3"><h2>NOSSOS PRODUTOS</h2></th>
+                    <th colspan="3">
+                        <h2>NOSSOS PRODUTOS</h2>
+                    </th>
                 </tr>
                 <tr>
                     <td><img src="imagens tratadas/p_hamburguer.jpg" alt="Hambúgueres na Frigideira"></td>
@@ -134,17 +133,17 @@
                     <td><img src="imagens tratadas/p_frango.jpg" alt="Pedaços de Frango na Frigideira"></td>
                 </tr>
                 <tr>
-                    <th>Frango <br>
+                    <th>Frango <br />
                         Temperado</th>
-                    <th>Empanados <br>
+                    <th>Empanados <br />
                         de Frango</th>
                     <th>Frango</th>
                 </tr>
                 <tr>
                     <td>
                         <ul>
-                            <li>com Curry</li>
-                            <li>com Barbecue</li>
+                            <li>Curry</li>
+                            <li>Barbecue</li>
                             <li>Tempero Marroquino</li>
                         </ul>
                     </td>
@@ -165,32 +164,36 @@
                 </tr>
             </table>
         </section>
-        <br>
-        <br>
+        <br />
+        <br />
         <section>
-            <!-- A tag img com o atributo src é para a inclusão de imagens no HTML. Já o atributo alt é para inserção de texto alternativo para descrever o conteúdo de uma imagem <img src> <alt> -->
-                <img src="imagens tratadas/banner_salsicha.jpg" alt="Hot-dogs Mexicanos">
-            </section>
-            <br>
-            <br>
+            <!-- A tag img com o atributo src com imagens dos produtos. <img src> <alt> -->
+            <img src="imagens tratadas/banner_salsicha.jpg" alt="Hot-dogs Mexicanos">
         </section>
-        <br>
-        <br>
+        <br />
+        <br />
+        </section>
+        <br />
+        <br />
         <section>
             <table>
                 <tr>
-                    <th colspan="3"><h2>RECEITAS</h2></th>
+                    <th colspan="3">
+                        <h2>RECEITAS</h2>
+                    </th>
                 </tr>
                 <tr>
-                    <td><img src="imagens tratadas/receita_hamburguer.jpg" alt="Hambúguer na Grelha ao Molho Barbecue"></td>
+                    <td><img src="imagens tratadas/receita_hamburguer.jpg" alt="Hambúguer na Grelha ao Molho Barbecue">
+                    </td>
                     <td><img src="imagens tratadas/receita_kebab.jpg" alt="Kebab de Frango"></td>
-                    <td><img src="imagens tratadas/receita_salada.jpg" alt="Salada Mediterrânea com Frango à Milanesa"></td>
+                    <td><img src="imagens tratadas/receita_salada.jpg" alt="Salada Mediterrânea com Frango à Milanesa">
+                    </td>
                 </tr>
                 <tr>
-                    <th>Hambúguer na Grelha <br>
-                    ao Molho Barbecue</th>
+                    <th>Hambúguer na Grelha <br />
+                        ao Molho Barbecue</th>
                     <th>Kebab de Frango</th>
-                    <th>Salada Mediterrânea <br>
+                    <th>Salada Mediterrânea <br />
                         com Frango à Milanesa</th>
                 </tr>
                 <tr>
@@ -199,17 +202,22 @@
                     <th>||||</th>
                 </tr>
                 <tr>
-                    <th colspan="3">Quer receber mais receitas como essa? <a href="contato.html">Cadastre-se</a></th>    
+                    <th colspan="3">Quer receber mais receitas como essa? <a href="contato.html">Cadastre-se</a></th>
                 </tr>
             </table>
         </section>
-        <br>
-        <br>
-        <!-- A tag footer define um rodapé para um documento ou seção. <footer> -->
+        <br />
+        <br />
+        <!-- Tag footer definindo um rodapé, com dados de endereços e outros dados <footer>. -->
         <footer>
-            <p><h4>Rua das Maravilhas Verdes, 678 - Parque das Florestas - São Paulo/SP - CEP:04575-015</h4></p>
+            <p>
+            <h4>Rua das Maravilhas Verdes, 678 - Parque das Florestas - São Paulo/SP - CEP:04575-015 - CNPJ:
+                23.456.789/0001-77</h4>
+            </p>
             <p>©2021, Isso Não É Um Animal do Brasil Ltda. Todos os direitos reservados</p>
+            <p>Desenvolvido por <a href="https://github.com/raunylima">Rauny Lima</a></p>
         </footer>
-        </main>
-    </body>
+    </main>
+</body>
+
 </html>

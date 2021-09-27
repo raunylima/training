@@ -1,32 +1,30 @@
-<!-- Essa tag é inseriada para a exibição coreeta de um site em um navegador -->
+<!-- Tag inseriada para a exibição coreeta de um site em um navegador -->
 <!DOCTYPE html>
-<!-- A tag html é a raiz do documento HTML. Todos os elementos são descendentes deste elemento. <html> -->
+<!-- Tag html é a raiz do documento HTML. Todos os elementos a seguir são descendentes deste elemento. <html> -->
 <html lang="pt-br">
-<!-- A tag head é reponsável pelo agrupamento do metadados do site <head> -->
-
+<!-- Tag head é reponsável pelo agrupamento do metadados do site <head> -->
 <head>
-    <!-- A tag title é a que defini o título do documento HTML. <title> -->
+    <!-- A tag title para definir o título do documento HTML. <title> -->
     <title>ISSO NÃO É UM ANIMAL</title>
 </head>
-
-<!-- A tag body é para definição do corpo do conteúdo de um site <body> -->
-
+<!-- Tag body é para definir do corpo do conteúdo de um site <body> -->
 <body>
-    <!-- A tag mai representa o conteúdo principal do site <main> -->
+    <!-- Tag main que representa o conteúdo principal do site <main> -->
     <main>
-        <!-- A tag nav serve para agrupamento de blocos de links do site. Ele indica que um determinado bloco é um bloco de navegação. <nav> -->
+        <!-- A tag nav para agrupamento de links do menu do site. Irá funcionar melhor no futuro com o menu em java.o. <nav> -->
         <nav>
-            <!-- A tag table é para criação de tabelas . Neste HTML usei da tabela para criar um menu para melhor apresentação, sem o uso de CSS. <table>-->
+            <!-- A tag table é para criação de tabelas. Neste HTML usei da tabela para criar um menu para melhor apresentação, sem o uso de CSS. <table>-->
             <table>
-                <!-- A tag tr é para abertura e fechamento de linhas e colunas na tabela. A cada abertura e fechamento dessa tag se refere ao número de linhas que seá incluida no HTML <tr> -->
+                <!-- A tag tr é para abertura e fechamento de linhas e colunas na tabela. A cada abertura e fechamento dessa tag se refere ao número de linhas que está sendo incluida no HTML <tr> -->
                 <tr>
-                    <!-- O atributo colspan mescla colunas <colspan> -->
+                    <!-- O atributo colspan mescla colunas e dar centralização do logo sem a necessidade estilização com CSS <colspan> -->
                     <th colspan="52">
-                        <!-- As tags h1, h2, h3, h4, h5 e h6 são tags para inserção de cabeçalhos. Normalmente utilizamos somente até h3 <h1> -->
-                        <h1>ISSO NÃO É UM ANIMAL</h1>
+                        <!-- Tag h1 com o nome da marca para dar destaque e incluir strong como semântica. Coloquei eles ocultos, pois já estou usando um logo/imagem-->
+                        <h1 hidden><strong>ISSO NÃO É UM ANIMAL</strong></h1>
+                        <a href="index.html"><img src="imagens tratadas/menor_Logo_INUC.png" alt="Logo da Isso Não É Um Animal"></a>
                 </tr>
                 <tr>
-                    <!-- A tag th e td se refere as coluna e linhas. Elas podem dar destaque/títulos nas linhas. O número de th ou td presente em uma tag tr se refere ao número de colunas criadas na tabela. <th> <td> -->
+                    <!-- A tag th e td se refere as coluna e linhas. Como já dito usei deste recurso para estilizar só com HTML. <th> <td> -->
                     <th> |||| </th>
                     <th> |||| </th>
                     <th> |||| </th>
@@ -50,7 +48,7 @@
                     <th> |||| </th>
                     <th> |||| </th>
                     <th> |||| </th>
-                    <!-- A tag a com o atributo href é utilizada para a inclusão de links e redirecionamentos no site. <a href=""> -->
+                    <!-- Tags a com o atributo href é utilizada para links para cada página criada. <a href=""> -->
                     <th><a href="index.html">Quem Somos</a></hd>
                     <th> |||| </th>
                     <th><a href="produtos.html">Nossos Produtos</a></th>
@@ -73,44 +71,49 @@
                     <th> |||| </th>
                     <th> |||| </th>
                     <th> |||| </th>
-                    <th> |||| </th>
-                    <th> |||| </th>
-                    <th> |||| </th>
-                    <th> |||| </th>
-                    <th> |||| </th>
-                    <th> |||| </th>
+                    <th> <img src="imagens tratadas/facebook_icon.png" alt="Ícone Facebook"></th>
+                    <th> <img src="imagens tratadas/instagram_icon.png" alt="Ícone Instagram"></th>
+                    <th> <img src="imagens tratadas/pinterest_icon.png" alt="Ícone Pinterest"></th>
                 </tr>
             </table>
         </nav>
-        <!-- A tag br é colocada no HTML para quebra de linhas e parágrafos. <br> -->
-        <br>
-        <br>
-        <!-- A tag header é para a inserção do conteúdo introdutório ou um conjunto de links de navegação. <header> -->
+        <!-- A tag br colocada no HTML para quebra de linhas e parágrafos. <br /> -->
+        <br />
+        <br />
+        <!-- A tag header para a inserção do conteúdo introdutório no site. No futuro irei incluir mensagens de consumidores rodando em uma banner automático com imagens de produtos ao fundo. <header> -->
         <header>
-            <!-- A tag img com o atributo src é para a inclusão de imagens no HTML. Já o atributo alt é para inserção de texto alternativo para descrever o conteúdo de uma imagem <img src> <alt> -->
+            <!-- A tag img com o atributo src com imagens dos produtos. <img src> <alt> -->
             <img src="imagens tratadas/banner_nuggets.jpg" alt="Nuggets com Purê de Batata">
         </header>
-        <br>
-        <br>
+        <br />
+        <br />
+        <!-- A tag section é para a divisão de seções em um HTML. Usei bastante essa tag para dar uma ideia de blocos no site. <section> -->
         <section>
+            <!-- A tag form para a crição do formulário <form>. -->
             <form>
+                <!-- A tag legend para a representação de um rótulo do formulário -->
                 <legend>
                     <h2 id=#c1>CADASTRO</h2>
                 </legend>
                 <p>
+                    <!-- A tag label é para criação de uma legenda para um item em uma interface de usuário <label>. O atributo for é para controle do elemento <for=""> -->
                     <label for="nome">Nome:</label>
-                    <input type="text" id="nome" placeholder="Nome Completo">
+                    <!-- A tag input é para controle em formulários. Ele cria uma caixa de texto ou número para colocar dados do uusuário em formulários <input>. 
+                    Foi incluido diversos inputs com atributos type diversos (radio, text, submit) e cada um tem uma necessidade, o atributo id  para identificador exclusivo. <id="">,
+                    o atributo required para que seja necessário o preenchimento de dados <required> e o placeholder para dica do que escrever ou como deve ser escrito <placeholder=""> -->
+                    <input type="text" id="nome" required placeholder="Nome Completo">
                 </p>
                 <p>
                     <label for="apelido">Usuário:</label>
-                    <input type="text" id="apelido" placeholder="Entre 6 e 8 caracteres.">
+                    <input type="text" id="apelido" required placeholder="Entre 6 e 8 caracteres.">
                 </p>
                 <p>
-                    <legend>Genêro:</legend> <br>
+                    <legend>Genêro:</legend> <br />
+                    <!-- O atributo name funciona para identificar de valores para backend. O atributo value defini o valor de um iten <value>. -->
                     <input type="radio" id="masculino" name="genero" value="masc"> Masculino
-                    <input type="radio" id="feminino" name="genero" value="femi"> Feminino <br> <br>
+                    <input type="radio" id="feminino" name="genero" value="femi"> Feminino <br /> <br />
                     <input type="radio" id="naobinario" name="genero" value="nbin"> Não Binário
-                    <input type="radio" id="agenero" name="genero" value="agnero"> Agênero <br> <br>
+                    <input type="radio" id="agenero" name="genero" value="agnero"> Agênero <br /> <br />
                     <input type="radio" id="outrog" name="genero" value="outrog"> Outro <input type="text"
                         placeholder="Especifique.">
                 </p>
@@ -137,6 +140,7 @@
                 <input type="text" id="bairro">
                 <p>
                     <label for="cidade">Cidade - UF</label>
+                    <!-- A tag select é para a criação de uma caixa de selecão <select>. Tentei fazer um teste com cidades - uf, apesar de ficar mais ou menos funcional o código ficou muito grande. Com o atributo option temos a opção para seleção da cidade - uf <option>. -->
                     <select name="cidade" id="cidade">
                         <option>Selecione Aqui</option>
                         <option value="Abadia de Goiás - GO">Abadia de Goiás - GO</option>
@@ -5715,60 +5719,61 @@
                         <option value="zé Doca - MA">zé Doca - MA</option>
                         <option value="Zortéa - SC">Zortéa - SC</option>
                     </select>
-                    <br>
+                    <br />
                 <p>
                     <label for="pReferencia">Ponto de Referência</label>
-                    <input type="text" id="pReferencia"> <br>
+                    <input type="text" id="pReferencia"> <br />
                 </p>
                 <p>
                     <label for="telefone">Telefone</label>
-                    <input type="tel" id="telefone" placeholder="(00)0000-0000"> <br>
+                    <input type="tel" id="telefone" required placeholder="(00)0000-0000"> <br />
                 </p>
                 <p>
                     <label for="celular">Celular</label>
-                    <input type="tel" id="celular" placeholder="(00)00000-0000"> <br>
+                    <input type="tel" id="celular" placeholder="(00)00000-0000"> <br />
                 </p>
                 <p>
                     <label for="email">E-Mail</label>
-                    <input type="email" id="email" placeholder="Digite Um E-mail Válido."> <br>
+                    <input type="email" id="email" required placeholder="Digite Um E-mail Válido."> <br />
                 </p>
                 <p>
                     <label for="senha1">Senha:</label>
-                    <input type="password" id="senha1"
-                        title="Sua senha deve conter Letras, Números e Símbolos com no mínimo 8 caracteres"> <br>
+                    <input type="password" id="senha1" required
+                        title="Sua senha deve conter Letras, Números e Símbolos com no mínimo 8 caracteres"> <br />
                 </p>
                 <p>
-                    <label for="senha2">Confirme<br>
+                    <label for="senha2">Confirme<br />
                         sua Senha:</label>
-                    <input type="password" id="senha2"
-                        title="Sua senha deve conter Letras, Números e Símbolos com no mínimo 8 caracteres"> <br>
+                    <input type="password" id="senha2" required
+                        title="Sua senha deve conter Letras, Números e Símbolos com no mínimo 8 caracteres"> <br />
                 </p>
-                <br>
+                <br />
                 <legend>Eu Aceito Receber</legend>
                 <input type="checkbox" id="ckeck1" value="info" name="opcoes"> E-Mails Informativos e Atualizações.
                 <input type="checkbox" id="ckeck2" value="promo" name="opcoes"> E-Mails Promocionais.
                 <input type="checkbox" id="ckeck3" value="parceiro" name="opcoes"> E-Mails de Parceiros.
-                <br>
-                <br>
+                <br />
+                <br />
                 <legend>Termos e Condições</legend>
-                <input type="checkbox" name="opcoes"> Eu Aceito os <a href="#t1" target="_self">Termos e Política de
+                <input type="checkbox" name="opcoes" required> Eu Aceito os <a href="#t1" target="_self">Termos e
+                    Política de
                     Privacidade</a> do site. <b>
                     OBRIGATÓRIO</b>
-                <br>
-                <br>
+                <br />
+                <br />
                 <p>
-                    <button type="submit">Enviar</button>
+                    <button type="submit">Cadastrar</button>
                 </p>
             </form>
         </section>
-        <br>
-        <br>
+        <br />
+        <br />
         <section>
-            <!-- A tag img com o atributo src é para a inclusão de imagens no HTML. Já o atributo alt é para inserção de texto alternativo para descrever o conteúdo de uma imagem <img src> <alt> -->
+            <!-- A tag img com o atributo src com imagens dos produtos. <img src> <alt> -->
             <img src="imagens tratadas/banner_frangox.jpg" alt="Frango Marroquino com Limão">
         </section>
-        <br>
-        <br>
+        <br />
+        <br />
         <section>
             <form>
                 <legend>
@@ -5777,15 +5782,15 @@
                 <p>Entre em contato conosco.</p>
                 <p>
                     <label for="nome">Nome:</label>
-                    <input type="text" id="nome" placeholder="Nome Completo">
+                    <input type="text" id="nome" required placeholder="Nome Completo">
                 </p>
                 <p>
                     <label for="email">E-Mail</label>
-                    <input type="email" id="email" placeholder="Digite Um E-mail Válido.">
+                    <input type="email" id="email" required placeholder="Digite Um E-mail Válido.">
                 </p>
                 <p>
                     <label for="telefone">Telefone</label>
-                    <input type="tel" id="telefone" placeholder="(00)00000-0000"> <br>
+                    <input type="tel" id="telefone" placeholder="(00)00000-0000"> <br />
                 </p>
                 <p>
                     <label for="cidade">Cidade - UF</label>
@@ -11367,15 +11372,16 @@
                         <option value="zé Doca - MA">zé Doca - MA</option>
                         <option value="Zortéa - SC">Zortéa - SC</option>
                     </select>
-                    <br>
+                    <br />
                 </p>
                 <p>
                     <label for="assunto">Assunto:</label>
-                    <input type="text" id="assunto" > <br>
+                    <input type="text" id="assunto" required> <br />
                 </p>
                 <p>
-                    <label for="comentario">Comentário:</label> <br>
-                    <textarea id="comentario" placeholder="Nos explique detalhadamente sua dúvida" cols="50" rows="5"></textarea>
+                    <label for="comentario">Comentário:</label> <br />
+                    <textarea id="comentario" required placeholder="Nos explique detalhadamente sua dúvida" cols="50"
+                        rows="5"></textarea>
                 </p>
                 <p>
                     <button type="reset">Limpar</button>
@@ -11383,14 +11389,16 @@
                 </p>
             </form>
         </section>
-        <br>
-        <br>
-        <!-- A tag footer define um rodapé para um documento ou seção. <footer> -->
+        <br />
+        <br />
+        <!-- Tag footer definindo um rodapé, com dados de endereços e outros dados <footer>. -->
         <footer>
             <p>
-            <h4>Rua das Maravilhas Verdes, 678 - Parque das Florestas - São Paulo/SP - CEP:04575-015</h4>
+            <h4>Rua das Maravilhas Verdes, 678 - Parque das Florestas - São Paulo/SP - CEP:04575-015 - CNPJ:
+                23.456.789/0001-77</h4>
             </p>
             <p>©2021, Isso Não É Um Animal do Brasil Ltda. Todos os direitos reservados</p>
+            <p>Desenvolvido por <a href="https://github.com/raunylima">Rauny Lima</a></p>
         </footer>
     </main>
 </body>

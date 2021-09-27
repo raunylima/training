@@ -1,30 +1,30 @@
-<!-- Essa tag é inseriada para a exibição coreeta de um site em um navegador -->
+<!-- Tag inseriada para a exibição coreeta de um site em um navegador -->
 <!DOCTYPE html>
-<!-- A tag html é a raiz do documento HTML. Todos os elementos são descendentes deste elemento. <html> -->
+<!-- Tag html é a raiz do documento HTML. Todos os elementos a seguir são descendentes deste elemento. <html> -->
 <html lang="pt-br">
-<!-- A tag head é reponsável pelo agrupamento do metadados do site <head> -->
+<!-- Tag head é reponsável pelo agrupamento do metadados do site <head> -->
 <head>
-<!-- A tag title é a que defini o título do documento HTML. <title> -->
+    <!-- A tag title para definir o título do documento HTML. <title> -->
     <title>ISSO NÃO É UM ANIMAL</title>
 </head>
-
-<!-- A tag body é para definição do corpo do conteúdo de um site <body> -->
+<!-- Tag body é para definir do corpo do conteúdo de um site <body> -->
 <body>
-    <!-- A tag mai representa o conteúdo principal do site <main> -->
+    <!-- Tag main que representa o conteúdo principal do site <main> -->
     <main>
-        <!-- A tag nav serve para agrupamento de blocos de links do site. Ele indica que um determinado bloco é um bloco de navegação. <nav> -->
+        <!-- A tag nav para agrupamento de links do menu do site. Irá funcionar melhor no futuro com o menu em java.o. <nav> -->
         <nav>
-            <!-- A tag table é para criação de tabelas . Neste HTML usei da tabela para criar um menu para melhor apresentação, sem o uso de CSS. <table>-->
+            <!-- A tag table é para criação de tabelas. Neste HTML usei da tabela para criar um menu para melhor apresentação, sem o uso de CSS. <table>-->
             <table>
-                <!-- A tag tr é para abertura e fechamento de linhas e colunas na tabela. A cada abertura e fechamento dessa tag se refere ao número de linhas que seá incluida no HTML <tr> -->
+                <!-- A tag tr é para abertura e fechamento de linhas e colunas na tabela. A cada abertura e fechamento dessa tag se refere ao número de linhas que está sendo incluida no HTML <tr> -->
                 <tr>
-                    <!-- O atributo colspan mescla colunas <colspan> -->
+                    <!-- O atributo colspan mescla colunas e dar centralização do logo sem a necessidade estilização com CSS <colspan> -->
                     <th colspan="52">
-                        <!-- As tags h1, h2, h3, h4, h5 e h6 são tags para inserção de cabeçalhos. Normalmente utilizamos somente até h3 <h1> -->
-                        <h1>ISSO NÃO É UM ANIMAL</h1>
+                        <!-- Tag h1 com o nome da marca para dar destaque e incluir strong como semântica. Coloquei eles ocultos, pois já estou usando um logo/imagem-->
+                        <h1 hidden><strong>ISSO NÃO É UM ANIMAL</strong></h1>
+                        <a href="index.html"><img src="imagens tratadas/menor_Logo_INUC.png" alt="Logo da Isso Não É Um Animal"></a>
                 </tr>
                 <tr>
-                    <!-- A tag th e td se refere as coluna e linhas. Elas podem dar destaque/títulos nas linhas. O número de th ou td presente em uma tag tr se refere ao número de colunas criadas na tabela. <th> <td> -->
+                    <!-- A tag th e td se refere as coluna e linhas. Como já dito usei deste recurso para estilizar só com HTML. <th> <td> -->
                     <th> |||| </th>
                     <th> |||| </th>
                     <th> |||| </th>
@@ -48,7 +48,7 @@
                     <th> |||| </th>
                     <th> |||| </th>
                     <th> |||| </th>
-                    <!-- A tag a com o atributo href é utilizada para a inclusão de links e redirecionamentos no site. <a href=""> -->
+                    <!-- Tags a com o atributo href é utilizada para links para cada página criada. <a href=""> -->
                     <th><a href="#q1">Quem Somos</a></hd>
                     <th> |||| </th>
                     <th><a href="produtos.html">Nossos Produtos</a></th>
@@ -71,32 +71,30 @@
                     <th> |||| </th>
                     <th> |||| </th>
                     <th> |||| </th>
-                    <th> |||| </th>
-                    <th> |||| </th>
-                    <th> |||| </th>
-                    <th> |||| </th>
-                    <th> |||| </th>
-                    <th> |||| </th>
+                    <th> <img src="imagens tratadas/facebook_icon.png" alt="Ícone Facebook"></th>
+                    <th> <img src="imagens tratadas/instagram_icon.png" alt="Ícone Instagram"></th>
+                    <th> <img src="imagens tratadas/pinterest_icon.png" alt="Ícone Pinterest"></th>
                 </tr>
             </table>
         </nav>
-        <!-- A tag br é colocada no HTML para quebra de linhas e parágrafos. <br> -->
-        <br>
-        <br>
-        <!-- A tag header é para a inserção do conteúdo introdutório ou um conjunto de links de navegação. <header> -->
+        <!-- A tag br colocada no HTML para quebra de linhas e parágrafos. <br /> -->
+        <br />
+        <br />
+        <!-- A tag header para a inserção do conteúdo introdutório no site. No futuro irei incluir mensagens de consumidores rodando em uma banner automático com imagens de produtos ao fundo. <header> -->
         <header>
-            <!-- A tag img com o atributo src é para a inclusão de imagens no HTML. Já o atributo alt é para inserção de texto alternativo para descrever o conteúdo de uma imagem <img src> <alt> -->
+            <!-- A tag img com o atributo src com imagens dos produtos. <img src> <alt> -->
             <img src="imagens tratadas/banner_carne.jpg" alt="Hambúguer Vegan">
         </header>
-        <br>
-        <br>
-        <!-- A tag section é para a divisão de seções em um HTML <section> -->
+        <br />
+        <br />
+        <!-- A tag section é para a divisão de seções em um HTML. Usei bastante essa tag para dar uma ideia de blocos no site. <section> -->
         <section>
             <table>
                 <tr>
                     <td>
-                        <h2>Mate Sua Fome <br>
-                            ><!-- a tag u é para a personalização do texto, deixando ele sublinhado <u> -->
+                        <h2>Mate Sua Fome <br />
+                            >
+                            <!-- a tag u é para a personalização do texto, deixando ele sublinhado <u> -->
                             <u>Sem Precisar Matar!</u>
                         </h2>
                     </td>
@@ -109,9 +107,9 @@
                 </tr>
                 <tr>
                     <td>
-                        <!-- A tag p é para a criação de parágrafos. <p> -->
-                        <p>Já pensou em comer aquele Hamburguer suculento e delicioso... <br>
-                            ou aquele Nuggets crocante e sequinho... <br>
+                        <!-- A tag p é para a criação de parágrafos <p> e tags b e mark estilização de texto, sem a necessidade de CSS, e inclusão de semântica. <b> <mark> -->
+                        <p>Já pensou em comer aquele Hamburguer suculento e delicioso... <br />
+                            ou aquele Nuggets crocante e sequinho... <br />
                             e descobrir que <b><mark>não é carne animal!?</mark></b></a></p>
                     </td>
                     <td></td>
@@ -141,31 +139,34 @@
                     <td></td>
                     <td></td>
                     <td>
-                        <p>Para nós da <strong>Isso Não É Um Animal</strong>, respeitar os animais e a natureza é algo que <br>
-                            levamos MUITO a sério, por isso trabalhamos diariamente para criar alimentos <br>
-                            que amamos sem peder o sabor e a satisfação que encontramos nas carnes.<br>
-                            <br>
+                        <p>Para nós da <strong>Isso Não É Um Animal</strong>, respeitar os animais e a natureza é algo
+                            que <br />
+                            levamos MUITO a sério, por isso trabalhamos diariamente para criar alimentos <br />
+                            que amamos sem peder o sabor e a satisfação que encontramos nas carnes.<br />
+                            <br />
                             Nosso produtos estão disponíveis em todo Brasil nas nossas lojas
-                            próprias, <br>
-                            mecados, açougues e até em mesmo nos seus restaurantes favoritos. <br>
-                            <br>
+                            próprias, <br />
+                            mecados, açougues e até em mesmo nos seus restaurantes favoritos. <br />
+                            <br />
                             <a href="produtos.html"><b>Confira os nossos produtos ></b>
                         </p>
                     </td>
                 </tr>
             </table>
         </section>
-        <br>
-        <br>
+        <br />
+        <br />
         <section>
-        <img src="imagens tratadas/banner_frango.jpg" alt="Macarrão com Frango à Milanesa">
+            <img src="imagens tratadas/banner_frango.jpg" alt="Macarrão com Frango à Milanesa">
         </section>
+        <br />
+        <br />
         <section>
             <table>
                 <tr>
-                    <!-- O atributo rowspan mescla linhas em uma tabela <rowspan> -->
+                    <!-- O atributo rowspan que mescla linhas em uma tabela <rowspan>. Usando desse recurso somente para melhor apresentação de design. -->
                     <td rowspan="2">
-                        <h2 id="q1">Você gosta de carne? <br>
+                        <h2 id="q1">Você gosta de carne? <br />
                             Nós fazemos!</h2>
                     </td>
                     <td></td>
@@ -174,25 +175,28 @@
                     <td></td>
                     <td></td>
                     <td>
-                        <!-- A tag semântica strong personaliza o html o deixando negrito -->
-                        <p>Fundada em 2015 em São Paulo a <strong>Isso Não É Um Animal</strong> tinha como proposta inicial a criação de
-                            alimentos, tendo como base a proteína vegetal,<br>
-                            trazendo inúmeros benefícios a saúde pessoal e do planeta. Foram muitos anos de estudos e
-                            experiências para encontrar a receita ideial, com o sabor <br>
-                            e textura perfeitos, que pudessem substituir a carne animal em todos os seus aspectos... ao
-                            ponto de "sangrar". <br>
-                            <br>
+                        <!-- Tag semântica strong personalizando o nome da marca e criando semântica. <strong> -->
+                        <p>Fundada em 2015 em São Paulo a <strong>Isso Não É Um Animal</strong> tinha como proposta
+                            inicial a criação de
+                            alimentos, tendo como base a proteína <br />
+                            vegetal, trazendo inúmeros benefícios a saúde pessoal e do planeta. Foram muitos anos de
+                            estudos e experiências para encontrar a receita <br />
+                            ideial, com o sabor e textura perfeitos, que pudessem substituir a carne animal em todos os
+                            seus aspectos... ao ponto de "sangrar". <br />
+                            <br />
                             A ideia não era criar somente uma nova opção de carne, mas sim uma nova alternativa para se
-                            alimentar bem e de forma consciente. Queriamos<br>
+                            alimentar bem e de forma consciente. <br />
+                            Queriamos
                             que as pessoas pudessem vivenciar as mesmas experências de uma carne de qualidade e
-                            deliciosa. De ter certeza de que você poderia fazer um<br>
-                            churrasco com os amigos e ficar orgulhoso de jogar alguns hambúgueres de soja na grelha... A
-                            meta era fazer comida incrível! <br>
-                            <br>
+                            deliciosa. De ter certeza de que você <br />
+                            poderia fazer um churrasco com os seus amigos e ficar orgulhoso de jogar alguns hambúgueres
+                            de vegetais na grelha... <br />
+                            A meta era fazer comida incrível! <br />
+                            <br />
                             Começamos com hambúgueres no nosso primeiro da marca e vendíamos para cerca de 10 lojas e
-                            mercados regionais. Hoje estamos presentes em<br>
-                            mais 40 mil lojas e mercados em todo o país e temos uma linha completa de produtos a base de
-                            proteína vegetal.
+                            mercados regionais. Hoje estamos <br />
+                            presentes em mais 40 mil lojas e mercados em todo o país e temos uma linha completa de
+                            produtos a base de proteína vegetal.
                         </p>
                     </td>
                 </tr>
@@ -203,56 +207,64 @@
                     <td></td>
                     <td></td>
                     <td>
-                        <!-- A tag article define um bloco de informação, texto e comentários e etc. <article> -->
-                        <!-- A tag cite é uma personalização do HTML para citações <cite> -->                        
-                        <article><cite>"A <strong>Isso Não É Um Animal</strong> surgiu após a minha necessidade de comer bem, com baixo
-                                custo e sem a necessidade de consumir carne animal".<br>
+                        <!-- Tag article definindo um bloco de informação <article> junto com a tag cite é uma personalização de uma citação <cite>. -->
+                        <article><cite>"A <strong>Isso Não É Um Animal</strong> surgiu após a minha necessidade de comer
+                                bem e de forma saudável, com baixo custo e sem a necessidade de <br />
+                                consumir carne animal".<br />
                                 (Rauny Lima, jan. de 2020, Jornal Folha de São Paulo)</cite></article>
                     </td>
                 </tr>
             </table>
         </section>
-        <br>
-        <br>
+        <br />
+        <br />
         <section>
-        <img src="imagens tratadas/banner_nuggets2.jpg" alt="Nuggets com Cebola Grelhada">
+            <img src="imagens tratadas/banner_nuggets2.jpg" alt="Nuggets com Cebola Grelhada">
         </section>
-        <br>
-        <br>
+        <br />
+        <br />
         <section>
             <table>
                 <tr>
-                    <th colspan="3"><h2>RECEITAS</h2></th>
+                    <th colspan="3">
+                        <h2>RECEITAS</h2>
+                    </th>
                 </tr>
                 <tr>
-                    <td><img src="imagens tratadas/receita_hamburguer.jpg" alt="Hambúguer na Grelha ao Molho Barbecue"></td>
+                    <td><img src="imagens tratadas/receita_hamburguer.jpg" alt="Hambúguer na Grelha ao Molho Barbecue">
+                    </td>
                     <td><img src="imagens tratadas/receita_kebab.jpg" alt="Kebab de Frango"></td>
-                    <td><img src="imagens tratadas/receita_salada.jpg" alt="Salada Mediterrânea com Frango à Milanesa"></td>
+                    <td><img src="imagens tratadas/receita_salada.jpg" alt="Salada Mediterrânea com Frango à Milanesa">
+                    </td>
                 </tr>
                 <tr>
-                    <th>Hambúguer na Grelha <br>
-                    ao Molho Barbecue</th>
+                    <th>Hambúguer na Grelha <br />
+                        ao Molho Barbecue</th>
                     <th>Kebab de Frango</th>
-                    <th>Salada Mediterrânea <br>
+                    <th>Salada Mediterrânea <br />
                         com Frango à Milanesa</th>
-                    </tr>
-                    <tr>
-                        <th>||||</th>
-                        <th>||||</th>
-                        <th>||||</th>
-                    </tr>
-                    <tr>
-                    <th colspan="3">Quer receber receitas como essa? <a href="contato.html#c1">Cadastre-se</a></th>    
                 </tr>
-                </table>
+                <tr>
+                    <th>||||</th>
+                    <th>||||</th>
+                    <th>||||</th>
+                </tr>
+                <tr>
+                    <th colspan="3">Quer receber receitas como essa? <a href="contato.html#c1">Cadastre-se</a></th>
+                </tr>
+            </table>
         </section>
-        <br>
-        <br>
-        <!-- A tag footer define um rodapé para um documento ou seção. <footer> -->
+        <br />
+        <br />
+        <!-- Tag footer definindo um rodapé, com dados de endereços e outros dados <footer>. -->
         <footer>
-            <p><h4>Rua das Maravilhas Verdes, 678 - Parque das Florestas - São Paulo/SP - CEP:04575-015</h4></p>
+            <p>
+            <h4>Rua das Maravilhas Verdes, 678 - Parque das Florestas - São Paulo/SP - CEP:04575-015 - CNPJ:
+                23.456.789/0001-77</h4>
+            </p>
             <p>©2021, Isso Não É Um Animal do Brasil Ltda. Todos os direitos reservados</p>
-        </footer> 
+            <p>Desenvolvido por <a href="https://github.com/raunylima">Rauny Lima</a></p>
+        </footer>
     </main>
 </body>
 </html>
