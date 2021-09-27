@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>AULA 03</title>
+</head>
+
+<body>
+    <!-- A tag form com action para chamar um arquivo e method para selecionar o método de envio de dados <form> <action> <method>. -->
+    <form action="" method="">
+        <!-- A tag fieldset é para criação de formulários ou checkbox.
+    Você pode criar vários fieldset dentro do mesmo fieldset <fieldset>. -->
+        <fieldset>
+            <legend>PREENCHA SEUS DADOS</legend>
+            <p>
+                <!-- O atributo type colocor cria um caixa de seleção de cores <type="color">. -->
+                <input type="color">
+            </p>
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Digite Nome Completo.">
+            </p>
+            <p>
+                <!-- A tag select serve para criar caixa de seleção para Estado ou Outros Tipos de Seleção (Ex: Selecionar Profissião ou Cores) <select>. É importante sempre colocar um option com um opção que sempre fica selecionada <option>. -->
+                <label for="estado">Estado</label>
+                <select name="estado" id="estado">
+                    <option>Selecione Seu Estado</option>
+                    <option value="AC">ACRE</option>
+                    <option value="AL">ALAGOAS</option>
+                    <option value="AP">AMAPAPÁ</option>
+                    <option value="AM">AMAZONAS</option>
+                    <option value="BA">BAHIA</option>
+                    <option value="CE">CEARÁ</option>
+                    <option value="DF">DISTRITO FEDERAL</option>
+                    <option value="ES">ESPÍRITO SANTO</option>
+                    <option value="GO">GOIÁS</option>
+                    <option value="MA">MARANHÃO</option>
+                    <option value="MT">MATO GROSSO</option>
+                    <option value="MS">MATO GROSSO DO SUL</option>
+                    <option value="MG">MINAS GERAIS</option>
+                    <option value="PA">PARÁ</option>
+                    <option value="PB">PARAÍBA</option>
+                    <option value="PB">PARANÁ</option>
+                    <option value="PE">PERNANBUCO</option>
+                    <option value="PI">PIAUÍ</option>
+                    <option value="RJ">RIO DE JANEIRO</option>
+                    <option value="RN">RIO GRANDE DO NORTE</option>
+                    <option value="RS">RIO GRANDE DO SUL</option>
+                    <option value="RO">RONDÔNIA</option>
+                    <option value="RR">RORAIMA</option>
+                    <option value="SC">SANTA CATARINA</option>
+                    <option value="SP">SÃO PAULO</option>
+                    <option value="SE">SERGIPE</option>
+                    <option value="TO">TOCANTINS</option>
+                </select>
+                </label>
+            </p>
+            <p>
+                <!-- No atributo type date podemos criar um caixa de calendário onde pode selecionar uma data <type="date">. É importante sempre linkar bem os id, name, type as informações certas <id=""> <name=""> <type="">. -->
+                <label for="dataDeNascimento">Data de Nascimento:</label>
+                <input type="date" id="dataDeNascimento" name="dataDeNascimento">
+            </p>
+            <p>
+                <label for="email">E-Mail</label>
+                <input type="email" id="email" placeholder="Digite Um E-mail Válido.">
+            </p>
+            <p>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" placeholder="Ex: Ab1@.">
+            </p>
+            <p>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" placeholder="Deixe Aqui Sua Mensagem" cols="25" rows="2"></textarea>
+
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Eu Aceito Receber</legend>
+            <input type="checkbox" id="ckeck1" value="info" name="opcoes"> E-Mails Informativos e Atualizações.
+            <input type="checkbox" id="ckeck2" value="promo" name="opcoes"> E-Mails Promocionais.
+            <input type="checkbox" id="ckeck3" value="parceiro" name="opcoes"> E-Mails de Parceiros.
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Termos e Condições</legend>
+            <input type="checkbox" name="opcoes"> Eu Aceito os <u>Termos e Política de Privacidade</u> do site. <b>
+                OBRIGATÓRIO</b>
+        </fieldset>
+        <br>
+        <fieldset>
+            <!-- O atributo type radio criamos a caixa de seleção redonda. Segue a mesma ideia dos demais label e input, precisam ser bem identificados -->
+            <p>
+                <legend>Faixa Etária:</legend>
+                <label for="faixaEtaria1"></label> 
+                <input type="radio" id="faixaEtaria1" name="faixaEtaria" value="17"> Menor de 18 Anos <br>
+                <label for="faixaEtaria2"></label> 
+                <input type="radio" id="faixaEtaria2" name="faixaEtaria" value="18"> Maior de 18 Anos
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <p>
+                <!-- A tag button cria um botão. -->
+                <!-- Já o atributo type reset é feito para limpar a informações digitadas no formulário. -->
+                <button type="reset">Limpar</button>
+                <!-- Já o atributo type submit é feito para submeter/enviar a informações digitadas no formulário. -->
+                <button type="submit">Enviar</button>
+            </p>
+        </fieldset>
+    </form>
+</body>
+
+</html>
