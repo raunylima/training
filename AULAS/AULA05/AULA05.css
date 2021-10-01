@@ -1,0 +1,56 @@
+/* Usando . siginifica que vou criar uma class e vou chamar via div class no HTML */
+/* Em CSS ele primeiro usa o estilo inline, depois usa o estilo interno e por último externo */
+.todoH1{
+    font-size: 20px; /* tamanho da fonte do título */
+    font-family: "comic sans", "arial", "tahoma", "verdana"; /* grupo/familia de fontes a serem usadas */
+    font-style: italic; /* estilização da fonte */
+    color: blue; /* essa é a cor da fonte */
+    }
+
+.todoH2{
+    font-size: 250%; /* tamanho da fonte do título - com % ou nome (ex: small) ele se baseia no padrão site - o padrão 
+    empresa/mercado de trabalho se usa mais px (20, 30 ou 40px) para definir tamanho */
+    font-family: "courier new", "arial", "times new roman"; /* grupo/familia de fontes a serem usadas */
+    color: blueviolet; /* essa é a cor da fonte */
+    font-style: italic;
+    }
+
+#divPai{
+    width: 500px;
+    height: 700px;
+    border-style: dotted;
+    border-color: purple;
+
+    }
+
+#divFilho{
+    width: 200px;
+    height: 200px;
+    background-color: plum;
+    /* A ideia é seguir sentido horário
+    com 4 > margin-top: 30px; margin-right: 30px; margin-bottom: 30px; margin-left: 30px 
+    com 3 > margin: 30px (top) 20px (right e left) 40px (bottom) 
+    com 2 > margin: 30px (top e bottom) 20px (right e left) 
+    com 1 > */ margin: 30px;
+    /* O padding segue a mesma ideia do margin para redução de código*/
+    padding: 60px;
+    /* Segue a mesma ideia dos anteriores
+    /* border-style: solid; border-color: royalblue; border-width: 5px; border-radius: 100%; */
+    /*border: solid 5px royalblue;*/
+    border-left: 10px dashed blue;
+    border-right: 10px groove red;
+    border-bottom: 10px solid yellow;
+    border-top: 10px solid black;
+    }
+
+.xleftcol {
+    float: left;
+    width: 33%;-
+    background:#809900;
+   }
+
+.xmiddlecol {
+    float: left;
+    width: 34%;
+    background:#eff2df;
+   }

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Estrutura com o float</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: rgb(25, 60, 135);
+            width: 100%;
+        }
+
+        nav {
+            width: 20%;
+            height: 500px;
+            background-color: rgb(25, 60, 135, 0.50);
+            padding-left: 10px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            font-size: 30px;
+            line-height: 2;
+            text-align: center;
+            float: left;
+
+        }
+
+        main {
+            width: 79%;
+            background-color: rgba(25, 60, 135, 0.13);
+            float: right;
+            
+        }
+
+        aside {
+            width: 20%;
+            background-color: darkolivegreen;
+            float: left;
+            wraper: ;
+
+
+        }
+
+        footer {
+            width: 100%;
+            height: 150px;
+            background-color: rgb(93, 74, 62);
+            clear: both;
+        }
+        .jornalJornal{
+            display: flex;
+            margin: auto;
+            padding: 25px;
+            left: 90px;
+            width: 25%;
+            border-radius: 30%;
+        }
+        a.click{
+            color: rgb(25, 60, 135);
+            font-size: 1.8vw;
+        }
+        h1{
+            font-weight:bold;
+            padding: 30px;
+            letter-spacing: 2px;
+            font-size: 2.5vw;
+            float: right;
+
+        }
+        .textosHome{
+            line-height: 1.5;
+            padding: 30px;
+            font-size: 1.5vw;
+        }
+        .carlinhosC{
+            position: relative;
+            padding: 20px;
+            width: 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="jornalJornal" src="/Users/raunylima/Desktop/jornal.png" alt="Jornal Jornal">
+    
+    </header>
+
+    <nav>
+            <p><a class="click" href="giro.html">Giro de Notícias</a></p>
+            <p><a class="click" href="tempo.html">Previsão do Tempo</a></p>
+            <p> <a class="click" href="politica.html">Política</a></p>
+            <p> <a class="click" href="corona.html">Coronavírus</a></p>
+            <p> <a class="click" href="esportes.html">Esportes</a></p>
+    </nav>
+    <main>
+        <img class="carlinhosC" src="/Users/raunylima/Desktop/charlinho.png" alt="Carlinhos Chorando">
+        <h1>CHARLINHOS CHORA AO VIVO</h1>
+        <p class="textosHome"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia voluptate rem doloribus sit, error provident reiciendis id magni repudiandae eligendi autem nemo culpa similique in quis quibusdam, facilis hic vel?
+        </p>
+    </main>
+
+    <aside>
+        <h3>Aqui terá uma área para patrocinadores</h3>
+    </aside>
+
+    <footer>Aqui é o rodapé</footer>
+</body>
+
+</html>

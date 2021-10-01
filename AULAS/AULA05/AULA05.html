@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Estou chamando o UTF-8 por conta do uso da lígua portuguesa-->
+    <meta charset="UTF-8">
+    <title>AULA05</title>
+    <!-- Existe CSS Interno, Externo e Inline. O mais usado é Externo - O IDEAL. O que deve ser usado pontualmente é o Inline
+    com poucos atributos. O Interno deve ser usado para coisas mais básicas, pois caso tenha muitas configurações torna a página lenta -->
+    <!-- Usando a tag link se chama o arquivo CSS externo .css <link>-->
+    <link rel="stylesheet" type="text/css" href="AULA05.css" />
+    <style type="text/css">
+        .titulo{
+            font-size: 3rem; /* tamanho da fonte do título */
+            color: #333; /* essa é a cor do texo */
+            text-align: center; /* o alinhamento do texto que carregar esta classe */
+        }
+        #botao-bonito{
+            color:white; /* cor da fonte */
+            padding-top: 15px; /* espaço superior entre o texto e o elemento */
+            padding-bottom: 15px; /* espaço inferior entre o texto e o elemento */
+            padding-right: 35px; /* espaço a direita entre o texto e o elemento */
+            padding-left: 35px; /* espaço a esquerda entre o texto e o elemento */
+            background-color: green; /* cor para o fundo do elemento, neste caso o botão */
+        }
+        section{
+            background-color: black;
+            font-size: 50px;
+            color: blanchedalmond;
+        }
+        .minhaDiv{
+            font-size: 20px; /* tamanho da fonte do título */
+            color: #333; /* essa é a cor do texo */
+            background-color: rgb(99, 200, 200);
+
+        }
+
+    </style>
+</head>
+<!-- Em CSS ele primeiro usa o estilo inline, depois usa o estilo interno e por último externo -->
+<body>
+    <!-- class pode ser usado mais de uma vez e o id é único / Os mineiros são a class e cada pessoa mineira é id -->
+    <!-- quando eu uso # no style do css é id - quando eu uso . no no style do css é class -->
+    <h1 class="titulo fonte grande sublinhado"> Melhor Site</h1>
+    <a id="botao-bonito" href="link-para-alguma-pagina">Clique Nesse Botão</a>
+    <br>
+    <br>
+    <h1 class="todoH1">Tá Passada?</h1>
+    <br>
+    <br>
+    <h2 class="todoH2">Seu Menino</h2>
+    <br>
+    <br>
+    <p style="font-size: large; color: rgb(99, 200, 200)">HAHAHAHA mas eu to rindo atoa</p>
+    <br>
+    <br>
+<section>
+    <p>BLA BLA BLA WHISKAS SACHE</p>
+</section>
+    <div class="minhaDiv">
+        <p>
+        O cara tussiu... O cara tussiu... O canalha do alto, que útil. 
+        </p>
+    </div>
+
+</body>
+</html>
