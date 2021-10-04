@@ -1,0 +1,50 @@
+/* chamando o gride para criar a grade */
+body {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-areas:
+      "header header header"
+      "aside main main"
+      "footer footer footer";
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto 75vh auto;
+  }
+  /* classe header com area do gride */
+  .header {
+    grid-area: header;
+  }
+  
+  .aside {
+    grid-area: aside;
+  }
+  
+  .main {
+    grid-area: main;
+  }
+  
+  .footer {
+    grid-area: footer;
+  }
+/* todas as tags e aplicando cor de fundo e cor na letra */
+  .header, .aside, .main, .footer {
+    background: #f3e245;
+    color: #000000;
+  }
+   /* bloco de grade para criar as três colunas */
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 75px;
+  }
+  /* bloco de grade para criar as linhas */
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+  /* aqui é espaçamento */
+ p.normal {
+    font-weight: normal;
+  }
