@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            background-color: aqua;
+        }
+
+        body {
+            font-family: 'Apercu', Arial, Helvetica, sans-serif;
+            font-weight: normal;
+            font-size: 1.2em;
+            color: #ffffff;
+        }
+
+        .home main section {
+            margin-bottom: 75px;
+        }
+
+        .relative {
+            position: relative;
+        }
+
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        main,
+        menu,
+        nav,
+        section,
+        summary {
+            display: block;
+        }
+
+        section {
+            margin: auto;
+            display: block;
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media screen and (min-width: 1024px) {
+            .flex {
+                flex-direction: row;
+            }
+        }
+
+        div {
+            display: block;
+        }
+
+        .w60 {
+            max-width: 100%;
+        }
+
+        @media screen and (min-width: 1024px) {
+            .w60 {
+                max-width: 60%;
+            }
+        }
+
+        .w80 {
+            max-width: 100%;
+        }
+
+        @media screen and (min-width: 1024px) {
+            .w80 {
+                max-width: 80%;
+            }
+        }
+
+        a.crosslink {
+            display: inline-flex;
+            align-items: center;
+            margin-right: auto;
+        }
+
+        a.crosslink {
+            position: relative;
+            font-family: 'Arpad', Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .withBackground {
+            margin: 200px auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+        }
+
+        .withBackground img {
+            max-width: 100%;
+        }
+
+        .underlay {
+            width: 100vw;
+            position: absolute;
+            height: 100%;
+            max-height: 615px;
+            z-index: 0;
+            left: 0px;
+        }
+
+        .withBackground .animation-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        @media screen and (min-width: 1024px) {
+            h2 {
+                font-size: 3rem;
+            }
+        }
+
+        h2 {
+            font-size: 2rem;
+            line-height: 1.1;
+        }
+
+        h2 {
+            font-size: 3rem;
+            line-height: 1.1;
+        }
+
+        @media screen and (min-width: 768px) {
+            h2 {
+                font-size: 2em;
+            }
+        }
+
+        h2 {
+            font-size: 1.4em;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Arpad', Arial, Helvetica, sans-serif;
+            font-size: 4em;
+            color: #ffffff;
+        }
+
+        h2 {
+            display: block;
+            font-size: 1.5em;
+            margin-block-start: 0.83em;
+            margin-block-end: 0.83em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+        }
+
+        @media screen and (min-width: 1024px) {
+            .flex__item-reverse {
+                flex-direction: row-reverse !important;
+                justify-content: space-between;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            .w70 {
+                max-width: 70%;
+            }
+        }
+
+        .w70 {
+            max-width: 100%;
+        }
+
+        .product-image {
+            max-width: 90%;
+        }
+
+        .home main {
+            margin-top: 0;
+        }
+
+        .site-main {
+            overflow: hidden;
+        }
+
+        main {
+            margin-top: 135px;
+        }
+
+        @media screen and (min-width: 768px) {
+            main {
+                padding: 0 3em;
+            }
+        }
+
+        @media screen and (min-width: 500px) {
+            main {
+                padding: 0 1.5em;
+            }
+        }
+
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        main,
+        section {
+            display: block;
+        }
+
+        main {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 1em;
+        }
+
+        main {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="relative">
+            <div class="mobile-reverse flex">
+                <div class="w60">
+                    <h2>
+                        Good taste meets sustainability. </h2>
+                    <p>For us at LikeMeat it is about creating all the things that we love – chicken, kebabs, bratwurst
+                        –
+                        healthier and do it without losing any flavour or satisfaction. It’s not about creating a
+                        substitute. It’s about making amazing food.</p>
+                    <p>LikeMeat products are now becoming available throughout Europe and soon everyone will be able to
+                        experience the taste, convenience and health of a plant-protein future.<br>
+                        See you in the kitchen!</p>
+                    <p><a class="crosslink" href="https://likemeat.com/uk/products/" rel="alternate">Check out our tasty
+                            products</a></p>
+                </div>
+                <div>
+                    <img src="https://likemeat.com/wp-content/uploads/2019/02/products.png" alt="">
+                </div>
+            </div>
+            <div class="w80">
+                <div>
+                    <h2>
+                        To create a future with a better way of eating, for a greater way of life. </h2>
+                    <p>At LikeMeat, we want to change the way you eat, not change you. And it’s not so complicated. This
+                        is
+                        the 21st century and we believe that you should be able to eat well and live an enjoyable,
+                        healthy
+                        life with both old traditions and new habits. Not either/or. For this reason we have created a
+                        way
+                        of doing without meat on the menu – but not having to do without. There’s no sacrifice, because
+                        our
+                        products have all the texture and flavours that make your mouth water, and there’s no guilt at
+                        the
+                        grill. We’re not a meat substitute, but an obvious choice. We don’t want to change ourselves –
+                        we
+                        just want to change our menu.</p>
+                    <p><a class="crosslink" href="https://likemeat.com/uk/about/" rel="alternate" hreflang="uk">Read
+                            more</a></p>
+                </div>
+            </div>
+            <div class="withBackground">
+                <!-- <img src="https://likemeat.com/wp-content/uploads/2019/02/background-02.png" alt="" class="underlay"> -->
+                <div class="animation-text">
+                    <h2 class="hidden">
+                        Like Meat the, <strong>obvious choice</strong>, every day of the week. </h2>
+                    <img src="https://likemeat.com/wp-content/uploads/2019/02/animation-text.png"
+                        alt="Like Meat the, <strong>obvious choice</strong>, every day of the week.">
+                    <p><a class="crosslink" href="https://likemeat.com/uk/recipes">For all the chefs out there, let’s
+                            cook!</a></p>
+                </div>
+                <div>
+                    <img src="https://likemeat.com/wp-content/uploads/2019/02/likemeat-kebab-every-day-of-the-week-uk.png"
+                        alt="">
+                </div>
+            </div>
+            <div class="mobile-reverse flex flex__item-reverse">
+                <div class="w70">
+                    <h2>
+                        Coming soon! Like Mini Drumsticks </h2>
+                    <p>Time to Dip Different!<br>
+                        Make some noise with these tasty treats that are all drumstick and no chicken! Succulent plant
+                        proteins in a crispy gluten free coating are perfect for a BBQ side or sports game snack and
+                        taste
+                        just Like Meat!</p>
+                    <p><a class="crosslink" href="https://likemeat.com/uk/product/like-mini-drumsticks/">Check it
+                            out!</a>
+                    </p>
+                </div>
+                <div>
+                    <img class="product-image"
+                        src="https://likemeat.com/wp-content/uploads/2021/03/like-chicken-wings-3d-uk-big.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

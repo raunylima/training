@@ -1,0 +1,477 @@
+/* pre-set do site  */
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    background-color: rgb(250, 150, 90);
+    font-family: sans-serif, Arial, Helvetica;
+    font-size: 10px;
+    }
+
+@media (max-width: 1024px) {
+* {
+    background-color: rgb(173, 224, 125);
+    }
+}
+
+@media (max-width: 660px) {
+* {
+    background-color: rgb(250, 90, 90);
+    }
+}
+
+/* CSS DE USO GERAL DO SITE */
+
+/* definindo o espaçamento máximo para os elementos */
+body {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* definição do tamanho do logo do site já com responsividade */
+img.logo {
+    width: 21%;
+    padding: 0.5rem;
+    margin: auto;
+}
+
+@media (max-width: 1024px) {
+    img.logo {
+    width: 24%;
+    }
+}
+
+@media (max-width: 660px) {
+    img.logo {
+        width: 30%;
+    }
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu li a {
+    font-size: 3rem;
+    margin: 2rem;
+}
+
+@media (max-width: 1024px) {
+    .menu li a {
+        font-size: 2rem;
+        margin: 0.5rem;
+    }
+}
+
+@media (max-width: 660px) {
+    .menu li a {
+        font-size: 1.5rem;
+        margin: 0.3rem;
+    }
+}
+
+.banners {
+    width: 95%;
+    -webkit-box-pack: center;
+    margin: auto;
+    /* já deixei este pre-set, no futuro penso em colocar um banner com imagens rotativas e texto/slogan flutuando sobre a imagem */
+    /* display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; */
+}
+
+.banners picture {
+    /* já deixei este pre-set, pois no futuro penso em colocar um banner com imagens rotativas e texto/slogan flutuando sobre a imagem */
+    display: flex;
+    flex-direction: column;
+    }
+
+.banners picture img {
+    width: 100%;
+}
+
+/* estilização dos links do menu */
+a {
+    text-decoration: none;
+    color: black;
+     font-weight: bolder;
+    text-align: center;
+}
+
+a:hover {
+    color: white;
+    font-weight: bolder;
+}
+
+.textoD {
+    font-size: 5rem;
+    line-height: 5rem;
+}
+
+/* ajustes de fonte espaçamento de linhas dos blocos informativos com destaque */
+.paddingTextos {
+    padding: 2rem;
+    width: 80%;
+
+}
+
+@media (max-width: 1024px) {
+    .paddingTextos {
+        padding: 1rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 660px) {
+    .paddingTextos {
+        padding: 0.5rem;
+        width: 100%;
+    }
+}
+    
+.textoP, .textoP strong {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: bold;
+    padding: 1.5rem;
+}
+
+.textoP strong {
+    color: white;
+    font-weight: bolder;
+}
+
+@media (max-width: 1024px) {
+    .textoP, .textoP strong {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 660px) {
+    .textoP, .textoP strong  {
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+}
+
+mark {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    font-variant: small-caps;
+    font-size: 3rem;
+}
+
+@media (max-width: 660px) {
+    mark {
+        font-size: 2.5rem;   
+    }
+}
+
+@media (max-width: 660px) {
+    mark {
+        font-size: 2rem;
+    }
+}
+
+.textoP a {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+    .textoP a {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+}
+
+@media (max-width: 660px) {
+    .textoP a {
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+}
+
+/* .homeP {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: aqua;
+
+}
+.homeT {
+    background-color: crimson;
+    margin: 50px;
+    line-height: 35px;
+} */
+        
+/* ajustes de fonte espaçamento de linhas do footer */
+.textoFooter, input {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+}
+
+@media (max-width: 1024px) {
+    .textoFooter, input {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+}
+
+@media (max-width: 660px) {
+    h4.textoFooter, input {
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+}
+
+@media (max-width: 660px) {
+    p.textoFooter {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+}
+
+/* estilização dos links menores do site */
+a.linkP {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 2.5rem
+}
+
+a.linkP:hover {
+    color: white;
+    font-weight: bolder;
+}
+
+@media (max-width: 1024px) {
+    a.linkP {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 660px) {
+    a.linkP {
+        font-size: 1.3rem;
+    }
+}
+
+/* linha para divisão em blocos do site */
+.linhaD {
+    border: none;
+    margin-top: 0.3rem;
+    border-top: 0.6rem solid black;
+    color: black;
+    height: 0.3rem;
+}
+
+@media (max-width: 1024px) {
+    .linhaD {
+        border-top: 0.3rem solid black;
+    }
+}
+
+@media (max-width: 660px) {
+    .linhaD {
+        border-top: 0.15rem solid black;
+    }
+}
+
+/* bordas invisiveis dos elementos */
+.bordaS {
+    padding: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+    .bordaS {
+        padding: 0.9rem;
+    }
+}
+
+@media (max-width: 660px) {
+    .bordaS {
+        padding: 0.6rem;
+    }
+}
+
+/* CSS EXCLUSIVO PÁGINA DE PRODUTOS */
+
+.listaProduto {
+  display: grid;
+  flex-direction: column;
+  grid-template-rows: auto;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  justify-content: center;
+}
+.repetidor {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  /* justify-content: center; */
+}
+
+.containerL {
+  padding: 1.5rem 2.5rem;
+  text-align: center;
+}
+
+.imagemProduto {
+  height: 320px;
+  width: 320px;
+  box-shadow: 1.2rem 1.2rem 0 0 rgba(255, 255, 255, 0.5);
+  margin: 2rem auto;
+}
+
+.imagemProduto:hover {
+    box-shadow: 1.2rem 1.2rem 0 0 rgb(250, 90, 90, 0.7);
+  }
+
+
+.textoTipoProduto p {
+  margin: 2rem 1rem;
+  list-style-type: none;
+  line-height: 1rem;
+  font-size: 2.2rem;
+}
+
+h3 {
+  margin: 1rem;
+  font-size: 3rem;
+}
+
+@media (max-width: 1240px) {
+    .repetidor {
+        grid-template-columns: repeat(2, 50%);
+    }
+}
+
+@media (max-width: 1024px) {
+    .imagemProduto:hover {
+        box-shadow: 1.2rem 1.2rem 0 0 rgb(250, 150, 90, 0.7);
+      }
+}
+
+@media (max-width: 750px) {
+    .repetidor {
+        grid-template-columns: 100%;
+    }
+}
+
+@media (max-width: 660px) {
+.imagemProduto:hover {
+    box-shadow: 1.2rem 1.2rem 0 0 rgb(173, 2224, 125, 0.7);
+  }
+
+/* form {
+    background-color: blue;
+    width: 60%;
+}
+
+input {
+    line-height: 3rem;
+    width: 90%;
+    padding: 2rem;
+    margin: 1rem;
+    box-sizing: border-box;
+}
+
+input[type=text], input[type=email], input[type=tel]   {
+    border: none;
+    border-bottom: 0.5rem solid black;
+}
+
+select {
+    width: 90%;
+    padding: 2rem;
+    border: none;
+    border-radius: 5rem;
+    background-color: white;
+}
+
+textarea {
+    width: 90%;
+    height: 15rem;
+    padding: 2rem;
+    box-sizing: border-box;
+    border: 0.5rem solid white;
+    border-radius: 5rem;
+    background-color: white;
+    resize: none;
+}
+
+input[type=submit], input[type=reset] {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 2rem;
+    text-decoration: none;
+    margin: 0.5rem;
+    cursor: pointer;
+  } */
+
+form {
+    font-family: sans-serif;
+    font-size: 1rem;
+    background-color: #0025cc;
+    max-width: 70%;
+}
+
+.formD {
+    margin: 2rem;
+    color: black;
+    text-shadow: 5px 5px 5px rgb(150,150,150);
+}
+
+input, textarea {
+    width: 20rem;
+    padding: 2rem;
+    color: black;
+    margin: 2rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    border: 1rem solid;
+}
+
+input:hover, textarea:hover, input:focus, textarea:focus {
+    border-color: #000066;
+    box-shadow: 0.5rem 0rem 1rem rgb(150,150,150);
+    background-color: #66FFFF;
+    color: black;
+    font-weight: bold;
+}
+
+.botaoEnvLimp {
+    background-color: black;
+    height: 4rem;
+    width: 10rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    border: 1rem solid;
+    color: black;
+}
+
+textarea {
+    width: 40rem;
+    height: 12rem;
+    line-height: 1rem;
+    max-width: 80rem;
+}
+
+form label {
+    margin: 2rem;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+

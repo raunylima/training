@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="aula13.js"></script>
+    <script type="text/javascript">
+        function hW() {
+            alert("HELLO WORLD!!")
+        }
+    </script>
+</head>
+
+<body>
+    <!-- abertura de parágrafro, com cabeçalho "h2" e negrito "b". usamos aqui só para ilustrar o HTML -->
+    <p>
+        <h2><b>clique no botão</b></h2>
+        </p>
+        <!-- abrimos um "form" para inserção do botão com ação de click. fora do "form" o "button" fica sem ação. -->
+        <form>
+            <!-- criação do "input" com "type button" para termos um botão, em seguida colocamos a ação com "onclik hw" para dar inicio na ação e tendo como valor "Hello Word" . -->
+            <!-- boa prática para fechar o input "/>" -->
+            <input type="button" onclick="hW()" value="Hello Word" />
+        </form>
+        <br />
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)"
+        style="background-color: blue; width:120px; height:20px; padding:40px;"> Passe o mouse aqui!
+    <script>
+        function mOver(obj) { // dispara quando você traz o mouse sobre o elemento
+            obj.innerHTML = "Obrigado!"
+        }
+        function mOut(obj) { // dispara quando você mover o mouse para fora do elemento.
+            obj.innerHTML = "Passe o mouse aqui!"
+        }
+    </script>
+
+    </div>
+</body>
+
+</html>
