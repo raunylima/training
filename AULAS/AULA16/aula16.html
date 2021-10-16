@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <script>
+        //Executa esta função quando o documento é carregado
+        window.onload = function () {
+            // crie alguns elementos em uma página HTML vazia
+            //A função createElement() irá criar um elemento HTML para ser, posteriormente, inserido em um documento HTML. 
+            var heading = document.createElement("h1");
+            //A função createTextNode cria um nó de texto e auxilia na criação de um elemento DOM. Imagine que queiramos inserir um título (tag h1 ) ao elemento body de nossa página HTML.
+            var heading_text = document.createTextNode("Grande!");
+            //appendChild() é um dos métodos fundamentais da programação para a web usando o DOM. O método appendChild() insere um novo nó na estrutura do DOM de um documento, e é a segunda parte do processo criar-e-adicionar tão importante na construção de páginas web.
+            heading.appendChild(heading_text);
+            document.body.appendChild(heading);
+        }
+
+        function preferedBrowser() {
+            // Acesso a uma lista de elementos de entrada do usuário junto ao options do selector do formulário.
+            prefer1 = document.forms[0].browsers.value;
+            alert("Voce prefere o navegador " + prefer1);
+        }
+
+        function doQueGosta() {
+            // Acesso a uma lista de elementos de entrada do usuário junto ao options do selector do formulário.
+            prefer2 = document.forms[1].gostos.value;
+            alert("Voce mais gosta de " + prefer2);
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <button id="btn">Clique aqui</button>
+
+        <script type="text/javascript">
+            // A função “addEventListener”, nativa da linguagem Javascript, permite ligar um evento de um objeto a uma função que fará seu tratamento. Usando essa função, não é preciso definir a propriedade de evento do objeto diretamente, pois isso será feito via código, dinamicamente. No exemplo a seguir, temos a mesma função exibir mensagem, mas dessa vez a ligamos ao evento click do botão usando a addEventListener.
+
+            function exibirMensagem() {
+                var data = new Date();
+                alert(data.toString());
+            }
+
+            var btn = document.getElementById("btn");
+
+            btn.addEventListener("click", exibirMensagem);
+        </script>
+    </div>
+    <div>
+        APAREÇO PRIMEIRO
+        <h1></h1>
+    </div>
+    <div>
+        <form>
+            Escolha seu navegador
+            <!-- O evento é disparado quando o <option> dentro de um <select> é selecionado , havendo alternância entre os <option> -->
+            <select id="browsers" onchange="preferedBrowser()">
+                <option value="Chrome">Chrome</option>
+                <option value="Internet Explorer">Internet Explorer</option>
+                <option value="Firefox">Firefox</option>
+            </select>
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>
+        <form>
+            Escolha o que mais gosta
+            <!--O evento é disparado quando o <option> dentro de um <select> é selecionado , havendo alternância entre os <option>-->
+            <select id="gostos" onchange="doQueGosta()">
+                <option value=""></option>
+                <option value="Ler">Ler</option>
+                <option value="Games">Games</option>
+                <option value="Dormir">Dormir</option>
+                <option value="Comer">Comer</option>
+                <option value="Musica">Música</option>
+                <option value="Filmes">Filmes</option>
+            </select>
+        </form>
+    </div>
+    <div>
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+          </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+          </script>
+    </div>
+</body>
+
+</html>

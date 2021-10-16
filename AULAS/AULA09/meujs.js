@@ -38,7 +38,7 @@ console.log(c);
 // cria uma mensagem no corpo do e-mail //
 document.write("testanto a escrita no corpo do HTML");
 
-// cria uma caixa pop-ip //
+// cria uma caixa pop-Up //
 // alert("testanto"); //
 
 // a linguagem javascript é case sensitive, ou seja, ser for b não pode usar B //

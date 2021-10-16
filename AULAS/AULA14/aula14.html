@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AULA 14</title>
+    <script src="aula14.js"></script>
+</head>
+
+<body>
+    <div>
+    <!--  função sendo chamanda no "onclick" -->
+    <button onclick="bgChange()">Mudar Cor de Fundo</button>
+    </div> 
+    <br />
+    <br />
+    <br />
+    <div>
+        <!-- mouseover e mouseout fazendo a troca de frases, junto com a ação de clique para mudança de cor de fundo -->
+        <div onmouseover="sair1(this)" onmouseout="sair2(this)" onclick="bgChange()"
+            style="background-color: grey; width:500px; height:50px; padding:50px; align-items: center; text-align: center;">
+
+            <h1><b>Obrigada por entrar nesta página!</b></h1>
+            
+    </div>
+        <br />
+        <br />
+        <br />
+    <div>
+        <!-- "onblur": o evento ocorre quando um objeto perde o foco. "onfocus": o evento ocorre quando o objeto recebe o foco. Exemplo: quando você clica em uma campo para digirar algo. Não há "script", os eventos estão dentro do input -->
+        <input value="digite aqui" type="text"
+        onblur="if(this.value == '') {this.value = 'digite aqui';}"
+        onfocus="if(this.value == 'digite aqui') {this.value = '';}" />
+    </div>
+    <br />
+    <br />
+    <br />
+    <div>
+        <!-- dar dois cliques no botão para ele trazer o comportamento desejado -->
+        <button ondblclick="myFunction()"> Clique 2x</button>
+        <p id="demo"> </p>
+        <p>Uma função é acionada quando o botão é clicado 2x. A função produz algum texto no elemento p com id="demo".</p>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div>
+        <input value="digite seu nome" type="text"
+        onblur="if(this.value == '') {this.value = 'digite seu nome';}"
+        onfocus="if(this.value == 'digite seu nome') {this.value = '';}" />
+        <br />
+        <br />
+        <br />
+        <input value="digite seu endereço" type="text"
+        onblur="if(this.value == '') {this.value = 'digite seu endereço';}"
+        onfocus="if(this.value == 'digite seu endereço') {this.value = '';}" />
+    </div>
+
+
+</body>
+
+</html>

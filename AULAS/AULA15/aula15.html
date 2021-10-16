@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AULA 15</title>
+    <script src="aula15.js"></script>
+
+</head>
+
+<body>
+    <div>
+        <ul align="right">
+            <center>
+                <legend>
+                    <h2>Fale Conosco:</h2>
+                </legend>
+                <form method="POST" action="" name="faleConosco" onsubmit="return enviarDadosContato();">
+                    </br></br>
+                    <label>Nome:</label>
+                    <input type="text" name="nome" /><span style="color: red;">*</span><br /></br>
+                    <label>E-mail: </label>
+                    <input type="email" name="email" /><span style="color: red;">*</span><br /></br>
+                    <label>Assunto: </label>
+                    <input type="text" name="assunto" /><span style="color: red;">*</span><br /></br>
+                    <label>Menssagem: </label></br></br>
+                    <textarea name="mensagem" cols="35" rows="8"></textarea><span
+                        style="color: red;">*</span><br /></br></br></br></br>
+                    <Button type="text" name="enviar" onclick="Alert()" value="Exibir Alert">Enviar</Button>
+                    <Button type="reset" name="limpar">Limpar</button></br></br></br>
+                    <span style="color: red;">*Campos de preenchimento obrigatório</span>
+                </form>
+            </center>
+        </ul>
+    </div>
+</br></br>
+</br></br>
+</br></br>
+</br></br>
+    <div>
+
+    </div>
+</br></br>
+</br></br>
+</br></br>
+</br></br>
+        <!-- uso do onkeydown e onkeyup -->
+        DIGITE ALGO: <input type="text" id="caixa" onkeydown="down()" onkeyup="up()" />
+    <div id="status"></div>
+</br></br>
+</br></br>
+</br></br>
+</br></br>
+    <button id="clickIt">Clique Aqui</button>
+    <br>
+    <b id="effect"></b>
+
+    <script>
+        const x = document.getElementById("clickIt");
+        x.addEventListener("click", Respond);
+        function Respond(e) {
+            document.getElementById("effect").innerHTML = "Tipo de Evento Gatilho = " + e.type + "<br><br>";
+            document.getElementById("effect").innerHTML = "Agora Clique no Evento para Desabilitar!" + "<br><br>";
+            x.innerText = "Clique Desabilitado :(";
+            x.removeEventListener("click", Respond);
+        }
+    </script>
+
+    </br></br>
+    </br></br>
+    </br></br>
+    </br></br>
+</body>
+
+</html>
