@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>AULA 17</title>
+    <!-- javascript interno -->
+    <script language=javascript type="text/javascript">
+        // vetor para dias da semana
+        dia = new Array ("Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado");
+        // vetor para mês do ano
+        mes = new Array ("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro");
+        // Aqui crio o construtor para poder ter acesso ao objeto Date
+        now = new Date();
+
+    </script>
+</head>
+<body>
+    <script language=javascript type="text/javascript">
+
+        // "document.write" imprime toda a data na tela. o "now" é a chave que chama o metódo. "getDay" em conjunto com a variável "dia" traz o dia da semana. "getDate" traz o dia do mês, não é necessário chamar variável neste caso pois ele se baseia em número de 1 a 28/30/31 dependendo do mês pois ele se atrela a variável "dia". "getMonth" em conjunto com a variável "mes" traz o mês referente a hoje. "getFullYear" traz o ano referente a hoje, também não é necessário chamar variável.
+        document.write("<h1> Hoje é " + dia[now.getDay()] + ", " + [now.getDate()] + " de " + mes[now.getMonth()] + " de " + [now.getFullYear()] + ".</h1>");
+        
+        alert("Hoje é " + dia[now.getDay()] + ", " + [now.getDate()] + " de " + mes[now.getMonth()] + " de " + [now.getFullYear()] + ".");
+
+        document.write("<h1>Agora são " + now.getHours() + "h:" + now.getMinutes() + "m:" + now.getSeconds(setInterval(1000)) + "s</h1>");
+
+        alert("Agora são " + now.getHours() + "h:" + now.getMinutes() + "m:" + now.getSeconds() + "s");
+
+    </script>
+    
+</body>
+</html>

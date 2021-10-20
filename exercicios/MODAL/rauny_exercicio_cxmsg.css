@@ -1,0 +1,143 @@
+* {
+    max-width: 1500px;
+    margin: auto;
+    font-family: 'Bebas Neue', cursive;
+}
+
+p{
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgb(0, 125, 255);
+    text-align: center;
+    padding: 10px;
+}
+
+div p {
+    padding: 0px;
+}
+
+legend.corFundo {
+    background-color: white;
+}
+
+fieldset{
+    max-width: 900px;
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+.responsivo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#opcao1, #opcao2, #opcao3, #opcao4, #opcao5, #opcao6 {
+    margin: 10px;
+}
+
+.mensagemNaCaixa {
+    margin: 10px;
+    padding: 10px;    
+}
+
+#botao:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px grey;
+}
+
+#botao{
+    margin-top: 25px;
+    border-radius: 50%;
+    width: 4%;
+    display: block;
+}
+
+#caixaG{
+    display:none;
+    margin-top: 50px;
+    width: 500px;
+    height: 230px;
+    background-color: rgb(200, 200, 200);
+    border:solid 2px white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+.OKbotao {
+    display: flex;
+    justify-content: center;
+}
+
+#faixa{
+    width: 500px;
+    height: 75px;
+    background-color: rgb(0, 125, 255);
+}
+
+#cabecalho{
+    font-size: 30px;
+    color: white;
+    margin: auto;
+    padding-top: 22px;
+}
+
+#botaoOK{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 25px;
+}
+
+#botaoOK:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px white;
+}
+
+button {
+    justify-items: center;
+}
+
+@media (max-width: 600px) {
+    fieldset{
+        max-width: 320px;
+        font-size: 20px;
+        line-height: 25px;
+}
+
+    #botao{
+        margin-top: 25px;
+        border-radius: 50%;
+        width: 8%;
+        display: block;
+}
+
+    #caixaG{
+        width: 320px;
+        height: 170px;
+}
+    #faixa {
+        width: 320px;
+        height: 50px;
+}
+    p {
+    font-size: 25px;
+}    
+    #cabecalho {
+        font-size: 25px;
+        padding-top: 12px;
+    }
+    #botaoOK{
+        width: 50px;
+        height: 25px;
+        border-radius: 5px;
+        padding: 0px;
+        margin: 0px;
+        font-size: 20px;
+    }
+}

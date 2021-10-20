@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto JavaScript</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/estilos.css">
+
+    <script src="JS/scripts.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Minha Loja 1.0</h1>
+    </header>
+    <main>
+        <section class="titulo">
+            <h2>Meus Produtos</h2>
+            <span>Lista de produtos da loja 1.0</span>
+        </section>
+        <section class="card">
+            <div class="linhaDeInput">
+                <label>Produto</label>
+                <input type="text" id="nomeProduto" placeholder="Nome do produto"></input>
+            </div>
+            <div class="linhaDeInput">
+                <label>Valor</label>
+                <input type="text" id="valorProduto" placeholder="Valor do produto"></input>
+            </div>
+            <button onclick="produto.salvar()">Salvar</button>
+            <button onclick="produto.cancelar()">Cancelar</button>
+        </section>
+        <section class="conteudo">
+            <table border=1>
+                <thead>
+                    <th class="center">ID</th>
+                    <th>Produto</th>
+                    <th>Valor</th>
+                    <th>Açoes</th>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </section>
+    </main>
+    </main>
+</body>
+</html>

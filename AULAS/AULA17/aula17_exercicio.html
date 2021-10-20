@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="refresh" content="1" /> -->
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button>
+        
+    </button>
+
+    <script language=javascript type="text/javascript">
+
+        // now = new Date();
+
+        setTimeout(function () {
+            window.location.reload(1);
+        }, 1000);
+
+        // // document.write("<h1>Agora são " + now.getHours() + "h:" + now.getMinutes() + ":" + now.getSeconds() + "</h1>");
+
+
+        // function addZero(numero) {
+        //     if (numero <= 9)
+        //         return "0" + numero;
+        //     else
+        //         return numero;
+        // }
+        // horaComZero = new Date();
+        // horaAtual = (addZero(horaComZero.getHours())) + "h:" + (addZero(horaComZero.getMinutes())) + ":" + (addZero(horaComZero.getSeconds()));
+        // document.write("<h1>Agora são " + horaAtual);
+
+        // day = new Array ("Sunday", "Monday", "Thuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+
+        // function horaAmerica(){
+        //     data = new Date();
+        //     h = data.getHours();
+        //     m = data.getMinutes();
+        //     s = data.getSeconds();
+
+        //     if (h>12){
+        //         document.querySelector('#eua').innerHTML = h + ":" + m + ":" + s + "pm";
+        //     } else {
+        //         document.querySelector('#eua').innerHTML = h + ":" + m + ":" + s + "am";
+        //     }
+        // }
+
+
+        // texto += "Today is: " + now.getFullYear() + "/" + now.getDate() + "/" + (now.getMonth()+1) + " " + day[now.getDay()] + " " + now.toLocaleString('en-US', { hour:'numeric', minute:'numeric', second:'numeric', hour12: true});
+        // document.getElementById(dataHoje).innerHTML = texto;
+
+
+        function addZero(numero) {
+            if (numero <= 9)
+                return "0" + numero;
+            else
+                return numero;
+        }
+        horaComZero = new Date();
+        horaAtual = (addZero(horaComZero.getHours())) + "h:" + (addZero(horaComZero.getMinutes())) + ":" + (addZero(horaComZero.getSeconds()));
+
+        now = new Date();
+
+        dia = new Array ("Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado");
+        // vetor para mês do ano
+        mes = new Array ("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro");
+
+        // "document.write" imprime toda a data na tela. o "now" é a chave que chama o metódo. "getDay" em conjunto com a variável "dia" traz o dia da semana. "getDate" traz o dia do mês, não é necessário chamar variável neste caso pois ele se baseia em número de 1 a 28/30/31 dependendo do mês pois ele se atrela a variável "dia". "getMonth" em conjunto com a variável "mes" traz o mês referente a hoje. "getFullYear" traz o ano referente a hoje, também não é necessário chamar variável.
+        document.write("<h1> Hoje é " + dia[now.getDay()] + ", " + [now.getDate()] + " de " + mes[now.getMonth()] + " de " + [now.getFullYear()] + " e agora são " + horaAtual + "</h1>");
+    </script>
+
+</body>
+
+</html>

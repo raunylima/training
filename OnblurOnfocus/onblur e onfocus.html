@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onblur e onfocus</title>
+    <style>
+        /* Estilo do body */
+        body {
+            background: rgba(17, 17, 170, 0.692);
+            margin-top: 30px;
+            margin-left: 30px;
+            align-items: center;
+        }
+        input{
+            font-size: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Chamamos o JS e aplicamos uma função -->
+    <script>
+        // As funções declaradas irão alterar o fundo do input e colocar um id para identificação. 
+        // Quando clicamos dentro do input ele fica rosa.
+        function fundoRosa() {
+            document.getElementById("mudarCor").style.backgroundColor = "#FF00FF";
+            document.getElementById("mudarCor").value="Sem Foco";
+        }
+        // Ao clicar fora do input o fundo ficará amarelo.
+        function fundoAmarelo() {
+            document.getElementById("mudarCor").style.backgroundColor = "#FFFF00";
+            document.getElementById("mudarCor").value="Com Foco";
+        }
+    </script>
+        <input id="mudarCor" onblur="fundoRosa()" onfocus="fundoAmarelo()" placeholder="Clique Aqui!" />
+        <!-- O evento onblur chama uma nova função que esta atribuida a ele (trocar o fundo para rosa), no momento em que perde o foco. -->
+        <!-- E o evento onfocus irá chamar outra função (troca o fundo para amarelo), no momento em que ganha o foco. -->
+</body>
+
+</html>

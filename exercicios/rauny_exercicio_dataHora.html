@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AULA 17</title>
+    <script>
+    </script>
+</head>
+
+<body>
+    <button id="clickIt">Clique Aqui</button>
+    <br>
+    <b id="effect"></b>
+    <br>
+    <br>
+    <input value="digite aqui" type="text" onblur="if(this.value == '') {this.value = 'digite aqui';}"
+        onfocus="if(this.value == 'digite aqui') {this.value = '';}" />
+    <br>
+    <button id="clickIt">Enviar</button>
+    <br>
+    <b id="effect"></b>
+    <br>
+    <br>
+    <script language=javascript type="text/javascript">
+
+        const x = document.getElementById("clickIt");
+        x.addEventListener("click", Respond);
+
+        function Respond(e) {
+            document.getElementById("effect").innerHTML = "Tipo de Evento Gatilho = " + e.type + "<br><br>";
+            document.getElementById("effect").innerHTML = "<br><br>";
+
+            x.innerText = "Botão Desabilitado :(";
+            x.removeEventListener("click", Respond);
+        }
+
+        function addZero(numero) {
+            if (numero <= 9)
+                return "0" + numero;
+            else
+                return numero;
+        }
+
+        horaComZero = new Date();
+        horaAtual = (addZero(horaComZero.getHours())) + "h:" + (addZero(horaComZero.getMinutes())) + ":" + (addZero(horaComZero.getSeconds()));
+
+        now = new Date();
+
+        dia = new Array("Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado");
+
+        mes = new Array("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro");
+
+        document.write("<h1> Hoje é " + dia[now.getDay()] + ", " + [now.getDate()] + " de " + mes[now.getMonth()] + " de " + [now.getFullYear()] + " e agora são " + horaAtual + "</h1>");
+
+    </script>
+</body>
+
+</html>

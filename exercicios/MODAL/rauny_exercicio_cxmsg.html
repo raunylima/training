@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="rauny_exercicio_cxmsg.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Exercício - Caixa de Mensagem</title>
+    <script src="rauny_exercicio_cxmsg.js" defer></script>
+
+
+</head>
+
+<body>
+    <p>ESCOLHAS</p>
+    <form id="formularioEscolhas">
+        <fieldset class="responsivo">
+            <legend class="corFundo">Qual Pílula Você Quer?</legend>
+            <label><input type="radio" id="opcao1" name="prefere">Ganhar a Casa e Carro dos Seus Sonhos.</label>
+            <label><input type="radio" id="opcao2" name="prefere">Obter Muito o Conhecimento.</label>
+            <label><input type="radio" id="opcao3" name="prefere">Ter uma Saúde Perfeita.</label>
+            <label><input type="radio" id="opcao4" name="prefere">Ganhar Super-Poderes.</label>
+            <label><input type="radio" id="opcao5" name="prefere">Viver Viajando o Mundo.</label>
+            <label><input type="radio" id="opcao6" name="prefere">Você escolheu que não tem preferências.</label>
+        </fieldset>
+        <img src="botao.png" id="botao" onclick="abrirJanela()">
+    </form>
+
+    <div id="caixaG">
+        <div id="faixa">
+            <p id=cabecalho>AVISO</p>
+        </div> <br>
+        <p id="mensagemNaCaixa">Texto da Caixa de Aviso</p> <br>
+        <div class="OKbotao">
+        <button id="botaoOK" onclick="fecharJanela()">OK</button>
+        </div>
+    </div>
+</body>
+
+</html>
