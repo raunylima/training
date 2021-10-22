@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AULA 18 - INTRODUÇÃO A JQUERY</title>
+    <!-- estamos chamando a biblioteca do jQuery para dentro do HTML, através de um arquivo externo. -->
+    <script type="text/Javascript" src="aula18_jquery.js"></script>
+    <!-- aqui chamamos a lib direto do site, sem precisar criar arquivo -->
+    <!-- <script type="text/Javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+</head>
+<body>
+    <!-- texto do teste 1 ao 5 -->
+    <!-- <div>
+        <h1>Lista de Nomes</h1>
+    </div>
+    <div>
+        <ul style="font-family: 'Roboto'; font-size: 35px;">
+            <li>Einsten</li>
+            <li>Caroline</li>
+            <li>Alice</li>
+            <li>Rauny</li>
+        </ul>
+    </div> -->
+
+    <!-- teste 1 - removendo as "li" com os seus nomes após clicar no botão -->
+    <!-- <button id="btn" onclick="$('li').remove()">Clique Aqui!</button> -->
+
+    <!-- teste 2 - incluindo a info "de Pessoas" após o "h1" após clicar no botão. -->
+    <!-- <button id="btn" onclick="$('h1').append(' de Pessoas')">Clique Aqui!</button> -->
+
+    <!-- teste 3 - removendo o "button" após clicar no botão -->
+    <!-- <button id='btn' onclick="$('#btn').remove()">Clique Aqui!</button> -->
+
+    <!-- teste 4 - removendo o "h1" após clicar no botão, através de uma função atrelada ao id "btn", sem usar "onclick" dentro da tag "button". -->
+    <!-- <button id='btn'>Clique Aqui!</button> -->
+    
+    <!-- teste 5 - trocando a cor da "li" e/ou "h1" após clicar no botão, através de um função atrelada ao id "btn". -->
+    <!-- <button id='btn'>Clique Aqui!</button> -->
+
+    <!-- teste 6 -  -->
+    <!-- o "onclick" chama a função "esconderCJQ" que esconde os parágrafos. -->
+    <!-- <h1>Olá jQuery!</h1>
+
+    <p>Esta é uma página usando o jQuery.</p>
+    <p>Dá para fazer muitas coisas legais com o jQuery.</p>
+    <p>Então preste atenção!</p>
+
+    <button onclick="esconderCjQ()">Clique para Esconder o Texto!</button> -->
+
+
+    <!-- exercicio - NOTA 10 ˆvˆ -->
+    <h1>Sou H1</h1>
+
+    <p class='pEsconde'> Sou P1</p>
+    <p class='pColor'>Sou P3</p>
+    <p class='pRemove'>Sou P3</p>
+    <p class='pEsconde'> Sou P4</p>
+    <p class='pColor'>Sou P5</p>
+    <p class='pEsconde'> Sou P6</p>
+    <p class='pRemove'>Sou P7</p>
+
+    <button id='mudaCSS'>Clique Aqui!</button>
+
+    <script>
+        // teste 1
+        // neste caso o "$" referencia a biblioteca jQuery.
+        // o #btn é o identificador do botão
+        // o "li" chama o seletor.
+        // o "remove" é o método que remove todos os "li" da lista.
+        // $('li').remove();
+
+        // teste 2
+        // o "h1" é a tag do HTML que vai alterar.
+        // o "append" é um método que adiciona um texto dentro do "h1".
+        // $("h1").append(" de Pessoas");
+
+        // teste 3
+        // o "#btn" é o identificador do botão.
+        // o "remove" é o método que remove o botão.
+        // $('#btn').remove();
+        
+        // teste 4
+        // "on" é o método do "Click".
+        // dentro dos parenteses temos o "Click".
+        // a "," (vírgula) chama a funcão que na verdade é botão
+        // $('#btn').on('click', botao)
+        //     // crio a função com nome botao
+        //     function botao(){
+        //         // chamo o jQuery, através $
+        //         $('h1').remove()
+        //     };
+
+        // teste 5
+        // $('#btn').on('click', botao)
+
+        //     // crio a função com nome botao
+        //     function botao(){
+
+        //         // chamo o jQuery, através $.
+        //         // chamo "li" e/ou "h1" que é onde será aplicado o CSS.
+        //         // chama ".css" com novo estilo a ser aplicado ao clicar no botão.
+        //         $('li').css({
+        //             'color': 'orange'
+        //         })
+
+        //         $('h1').css({
+        //             'color': 'purple'
+        //         })
+        //     };
+
+        // teste 6
+        // cria função para esconder textos "p".
+        // function esconderCjQ(){
+        //     // "$" determina  o uso do jQuery.
+        //     // o "p" e/ou "h1" seram submetidos ao método "hide".
+        //     // o método "hide" esconde o "p".
+        //     $('p, h1').hide();
+        // }
+
+        // chamando "$" para jQuery e função para realizar a mudanças de troca de cor, remover e esconder tags
+        $('#mudaCSS').on('click', mudancasCSS)
+        function mudancasCSS() {
+            // mudando a cor do h1 e p - com cores diferente
+            $('h1').css({
+                'color': 'orange'
+                })
+            $('.pColor').css({
+                'color': 'purple'
+                })
+            // escondendo p
+            $('.pEsconde').hide(3000)
+            // fazendo ele aparecer novamente
+            $('.pEsconde').show(2000)
+            // removendo p
+            $('.pRemove').remove()
+            // escondendo p novamente
+            $('.pEsconde').hide(1500)
+        }
+
+    </script>
+</body>
+</html>

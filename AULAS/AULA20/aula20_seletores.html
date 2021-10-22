@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AULA 20 - SELETORES</title>
+    <!-- estamos chamando a biblioteca do jQuery para dentro do HTML, através de um arquivo externo. -->
+    <script type="text/Javascript" src="aula20_jquery.js"></script>
+    <!-- aqui chamamos a lib direto do site, sem precisar criar arquivo -->
+    <script type="text/Javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- criamos um estilo interno para o display, com resultado "none" para esconder -->
+    <style type="text/css" media="all">
+        /* .escondido {
+            display: none;
+        } */
+
+        #box-toggle {
+            width: 500px;
+            margin: 0;
+            text-align: justify;
+            font: 12px/1.4 Atial, Helvetica, sans-serif;
+        }
+
+        #box-toggle .tgl {
+            margin-bottom: 30px;
+        }
+
+        #box-toogle span {
+            display: block;
+            cursor: point;
+            font-weight: bold;
+            font-size: 14px;
+            color: #c30;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- criamos o "h1" para apresentar o cabeçalho -->
+    <!-- <h1>Exemplos - Seletores</h1>
+    <br> -->
+    <!-- criamos a "div" para identificar os seletores e chamar as tags do HTML no jQuery -->
+    <!-- <div id="menu">
+        <a href="#">Home</a> | 
+        <a href="#">Artigos</a> | 
+        <a href="#">Contato</a>
+    </div> -->
+
+    <!-- criamos o botão com o input do tipo button; o calor  
+        no "input" criei um botão com id "botao" para chamar a função. esse botão será criado na página e o "alert" só será apresentado após clicar no botão -->
+    <input id="botao" type="button" value="Clique Aqui para Ver o Resultado" />
+
+    <p>P1</p>
+    <p>P2</p>
+    <p>P3</p>
+
+    <script type="text/Javascript">
+        // // criamos uma função simples, onde os seletores juntos dentros das aspas, pois se trata de um agrupamento. criamos uma estilização para CSS, utilizando objeto, já que criamos um estilo para o tipo de fonte, alinhamento e a cor do texto.
+        // $("a, #menu, h1").css({
+        //     fontFamily: "verdana",
+        //     textAlign: "center",
+        //     color: "darkgreen",
+        // });
+        
+        // sixtense para criar um médoto personalizado denominado toggleText que executa um função
+        jQuery.fn.toogleText = function (a, b) {
+            // o método criado verifica qual é conteúdo HTML textual de um elemento entre os dois forncecidos nos parâmetros da função e troca um pelo outro. Considere, por exemplo, a=Revelar e b=Esconder para entender o funcionamento da função.
+            return this.html(this.html().replace
+            (new RegExp("(" + a + "|" + b + ")"),
+                function (x) {
+                    return (x == a) ? b : a;
+                }));
+        }
+
+        $(document).ready(function () {
+            // criamos com o script a marcação HTML para a chave revelar/esconder com valor inicial revelar e a inserimos antes dos conteúdos a revelar "div.tgl.".
+            $('.tgl').before('<span>Revelar Conteúdo</span>');
+            // escondemos os conteúdos a revelar com declaração CSS no script.
+            $('.tgl').css('display','none');
+            // atrelamos o evento click às chaves.
+            $('span', '#box-toggle').click(function () {
+                // clicando a chave a visibilidade do contúdo imediatamente a seguir é troca, se escondida é revelada e vice-versa.
+                $(this).next().slideToggle('slow')
+                // ao mesmo tempo qualquer dos conteúdos vizinhos que estejam revelados serão escondidos.
+                .siblings('.tgl:visible').slideToggle('fast');
+            // alterna "Revelar" com "Esconder".
+            $(this).toggleText('Revelar', 'Esconder')
+                // troca esconder por revelar para conteúdos vizinhos que 
+                
+            })
+            
+        })
+
+        // criamos uma função para ao clicar no botão esconder e revelar um parágrafo.
+        $(document).ready(function(){
+            // "#botão", vocês tem um clique
+            $('#botao').click(function (){
+                // no seletor "p", de parágrafo... mostre e esconda o texto com o "".toggle"
+                $('p').toggle();
+            });
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+
+h1 {
+    color: darkmagenta;
+}
+p {
+    color: darkorange;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+    padding: 40px;
+}
+
+div {
+    width: 500px;
+    height: 100px;
+    background:darkblue;
+    margin:20px;
+}
+
+#resposta{
+    
+}

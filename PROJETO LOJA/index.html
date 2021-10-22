@@ -8,14 +8,29 @@
     <title>Projeto JavaScript</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/estilos.css">
-
-    <script src="JS/scripts.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
     <header>
         <h1>Minha Loja 1.0</h1>
     </header>
+    <section id="banner">
+        <div id="btnAntes"></div>
+        <div id="btnProx"></div>
+        <div id="btnRadio"></div>
+            <input type="radio" id="b1" name="banners" value="1" />
+            <input type="radio" id="b2" name="banners" value="2" />
+            <input type="radio" id="b3" name="banners" value="3" />
+            <input type="radio" id="b4" name="banners" value="4" />
+        </div>
+    </section>
+    <!-- <div id="slideR">
+        <input type="radio" id="b1" name="banners">
+        <input type="radio" id="b2" name="banners">
+        <input type="radio" id="b3" name="banners">
+        <input type="radio" id="b4" name="banners">
+    </div> -->
     <main>
         <section class="titulo">
             <h2>Meus Produtos</h2>
@@ -30,7 +45,7 @@
                 <label>Valor</label>
                 <input type="text" id="valorProduto" placeholder="Valor do produto"></input>
             </div>
-            <button onclick="produto.salvar()">Salvar</button>
+            <button id="btn1" onclick="produto.salvar()">Salvar</button>
             <button onclick="produto.cancelar()">Cancelar</button>
         </section>
         <section class="conteudo">
@@ -47,5 +62,8 @@
         </section>
     </main>
     </main>
+    <script src="JS/scripts.js"></script>
+
 </body>
+
 </html>

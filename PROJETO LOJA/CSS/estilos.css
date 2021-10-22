@@ -76,3 +76,34 @@ table td img{
 .center{
     text-align: center;
 }
+
+#banner {
+    margin: auto;
+    width: 80%;
+    height: 250px;
+    border: 1px solid #000;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#btnAntes, #btnProx {
+    line-height: 200px;
+    font-size: 30px;
+    color: rgb(0, 0, 0, 5);
+    font-weight: bold;
+    cursor: pointer;
+}
+#btnAntes {
+    float: left;
+}
+
+#btnProx {
+    float: right;
+}
+
+#btnRadio {
+    position: relative;
+    top: 250px;
+    left: 50%;
+}
+
